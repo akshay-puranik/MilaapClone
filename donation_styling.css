@@ -1,0 +1,94 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #4c4b4c;
+}
+
+#donation_form_container {
+  width: 40%;
+  margin: auto;
+  padding: 23px;
+  border-radius: 20px;
+  background-color: #fff;
+}
+
+#donation_form_header {
+  margin: 5px 0px 20px 0px;
+}
+
+#donor_form_rule {
+  background-color: #e0e0e0;
+  height: 1px;
+}
+
+
+.to_be_flexed {
+  display: flex;
+}
+
+
+
+#donation_amount_input {
+  background-color: #9c3353;
+  color: white;
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  height: 80px;
+  margin-bottom: 5px;
+}
+
+#donation_amount_input div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#donation_amount_input div:first-child{
+  width: 45%;
+}
+
+#donation_amount_input div:last-child{
+  width: 65%;
+}
+
+#donation_amount_input input{
+  background-color: #9c3353;
+  color: white;
+  height: 30px;
+  border: none;
+  border-bottom: 2px solid #e0e0e0;
+  outline: none;
+}
+
+#donation_amount_input input::placeholder{
+  color: white;
+}
+
+#donation_tagline{
+  padding: 10px;
+  font-size: small;
+  background-color: #ffffd5;
+}
+
+#donation_tip_container{
+  padding: 10px;
+  background-color: #f5f5f5;
+  margin-bottom: 30px;
+}
+#donation_tip_container div:last-child{
+  margin-top: 10px;
+  padding: 20px 0px;
+}
+
+#donor_name{
+  width: 100%;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #e0e0e0;
+  margin-bottom: 30px;
+}
+/* #9c3353 */

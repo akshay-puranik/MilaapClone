@@ -42,6 +42,22 @@ body
     margin-bottom: 0%;
 }
 
+#fr_Medical
+{
+    background-color: #691a47;
+}
+
+.fr_select_p
+{
+    font-weight: 300;
+    font-size: 13px;
+}
+
+#fr_cause_medical_p
+{
+    color: white;
+}
+
 #fr_logo
 {
     height: 40px;
@@ -112,6 +128,10 @@ body
     align-items: center;
     /* background-color: #691a47; */
 }
+#fr_cause_selection>div:hover
+{
+    cursor: pointer;
+}
 
 #fr_cause_selection>div>p
 {
@@ -122,9 +142,10 @@ body
 #fr_form_box>#fr_form>input
 {
     width: 460px;
+    padding-top: 10px;
     border: none;
     border-bottom: 1px solid rgb(190, 190, 190);
-    margin-bottom: 35px;
+    margin-bottom: 25px;
 }
 
 .fr_num
@@ -135,6 +156,18 @@ body
 #fr_phonenum
 {
     width: 410px;
+    padding-top: 10px;
+}
+
+i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(238, 238, 238);
+    width: 25px;
+    height: 20px;
+    padding-top: 5px;
+    border-radius: 3px;
 }
 
 hr
@@ -172,4 +205,142 @@ hr
     margin-right: 10px;
     border-radius: 20px;
     border: none;
+}
+
+
+
+
+.popinput
+{
+    text-align: center;
+    background-color: white;
+    padding: 60px 30px;
+    border-radius: 5px;
+    border: 1px solid rgb(213, 213, 213);
+    position: fixed;
+    top: 0%;
+    left: 50%;
+    z-index: 10;
+    transform: translate(-50%,-50%)scale(0.1);
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s ease-in-out;
+}
+
+.correct
+{
+    background-color: white;
+    width: 330px;
+    border-radius: 5px;
+    text-align: center;
+    background-color: white;
+    padding: 0px 30px;
+    border: 1px solid rgb(213, 213, 213);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 10;
+    transform: translate(-50%,-50%)scale(1);
+    display: none;
+}
+
+.wrong
+{
+    background-color: white;
+    width: 330px;
+    border-radius: 5px;
+    text-align: center;
+    background-color: white;
+    padding: 0px 30px;
+    border: 1px solid rgb(213, 213, 213);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 10;
+    transform: translate(-50%,-50%)scale(1);
+    display: none;
+}
+
+.wrong>img
+{
+    width: 100px;
+    margin-top: -50px;
+    margin-bottom: 30px;
+}
+
+.correct>img
+{
+    width: 100px;
+    margin-top: -50px;
+    margin-bottom: 30px;
+}
+
+.wrong>button
+{
+    margin-bottom: 40px;
+}
+
+.correct>button
+{
+    margin-bottom: 40px;
+}
+
+.wrong>h4
+{
+    margin: 40px;
+}
+
+.correct>h4
+{
+    margin: 40px;
+}
+
+.open-popinput
+{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%,-50%)scale(1);
+}
+
+.popinput>input
+{
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 180px;
+    border: none;
+    border: 1px solid rgb(209, 209, 209);
+    color: rgb(209, 209, 209);
+    border-radius: 3px
+}
+.popinput>button
+{
+    width: 200px;
+    box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+}
+
+#overlay
+{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0%;
+    right: 0%;
+    bottom: 0;
+    background-color: black;
+    opacity: 50%;
+}
+
+#popinput>input::placeholder
+{
+    text-align: center;
+}
+
+
+.popbuttn
+{
+    padding: 10px;
+    width: 100px;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    background-color: #691a47;
 }

@@ -40,34 +40,34 @@
                 <h5>cause</h5>
             </div>
             <div id="fr_cause_selection">
-                <div id="fr_Medical">
+                <div class="fr_select_div" onclick="d_medical()" id="fr_Medical">
                     <i class="fa-solid fa-stethoscope"></i>
-                    <p>Medical</p>
+                    <p class="fr_select_p" id="fr_cause_medical_p">Medical</p>
                 </div>
-                <div id="fr_Education">
+                <div class="fr_select_div" onclick="education()" id="fr_Education">
                     <i class="fa-solid fa-book-open-reader"></i>
-                    <p>Education</p>
+                    <p class="fr_select_p" id="fr_cause_education_p">Education</p>
                 </div>
-                <div id="fr_Memorial">
+                <div class="fr_select_div" onclick="memorial()" id="fr_Memorial">
                     <i class="fa-solid fa-monument"></i>
-                    <p>Memorial</p>
+                    <p class="fr_select_p" id="fr_cause_memorial_p">Memorial</p>
                 </div>
-                <div id="fr_Others">
+                <div class="fr_select_div" onclick="other()" id="fr_Others">
                     <i class="fa-solid fa-ellipsis"></i>
-                    <p>Others</p>
+                    <p class="fr_select_p" id="fr_cause_other_p">Others</p>
                 </div>
             </div>
         </div>
         <div id="fr_form_box">
-            <form id="fr_form">
-                <input type="text" placeholder="Name">
+            <form onsubmit="main(event)" id="fr_form">
+                <input id="fr_name" type="text" placeholder="Name" required>
                 <br>
-                <input type="text" placeholder="Email ID">
+                <input id="fr_email" type="email" placeholder="Email ID" required>
                 <div fr_det_phone>
                     <select class="fr_num" name="" id="+91" >
                         <option value="">+91</option>
                     </select>
-                    <input class="fr_num" id="fr_phonenum" type="text" placeholder="Phone number">
+                    <input class="fr_num" id="fr_phonenum" inputmode="numeric" minlength="10" maxlength="10" placeholder="Phone number" required>
                     <hr>
                 </div>
                 
@@ -81,5 +81,22 @@
         </div> 
     </form>
     </div>
+    <div id="overlay"></div>
+    <div class="popinput" id="popinput">
+        <input id="otpinput" type="password" maxlength="4" minlength="4" placeholder="Enter your OTP" required>
+        <br>
+        <button class="popbuttn" onclick="checkotp(event)">Submit</button>    
+    </div>
+    <div class="correct" id="popcorrect">
+        <img src="https://cdn-icons-png.flaticon.com/512/463/463574.png" alt="">
+        <h3>Sucessful</h3>
+        <button class="popbuttn" onclick="logoclick(event)">OK</button>
+    </div>
+    <div class="wrong" id="popwrong">
+        <img src="https://cdn-icons-png.flaticon.com/512/399/399274.png" alt="">
+        <h3>Wrong otp</h3>
+        <button class="popbuttn" onclick="window.location.reload()">Try again</button>
+    </div>
 </body>
+<script src="scripts/fundraiser.js"></script>
 </html>

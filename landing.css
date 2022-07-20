@@ -1,0 +1,141 @@
+body {
+  padding: 0px;
+  border: 0px;
+  box-sizing: border-box;
+}
+#container {
+  height: 525px;
+  width: 100%;
+  border: 1px solid white;
+  background-image: url(https://cimages.milaap.org/milaap/image/upload/v1655996033/production/entity_details/milaap_page/524/Desktop_img_2__5__1655996032.jpg);
+  background-repeat: no-repeat;
+  background-size: 40% 100%;
+  background-attachment: fixed;
+  background-position: right;
+  padding-top: -50%;
+}
+#urgent {
+  height: 50px;
+  width: 58%;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  margin: auto;
+  margin-top: 9%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #5d5d5d;
+  font-family: AvenirLTPro-Medium;
+  font-size: 20px;
+  line-height: 1.5;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen-Sans,
+    Ubuntu, Cantarell, Helvetica Neue, sans-serif;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.87);
+  background-color: #fff;
+  border-radius: 6px;
+  -webkit-tap-highlight-color: transparent;
+}
+.bi {
+  margin-left: 15px;
+}
+.bi:hover {
+  cursor: pointer;
+}
+#heading {
+  height: 300px;
+  width: 80%;
+  margin: auto;
+}
+#heading1 {
+  height: 90%;
+  width: 45%;
+  margin-top: 15px;
+}
+#Mil {
+  margin-top: 6px;
+  line-height: 33px;
+}
+.title {
+  color: #9c3353;
+  font-size: 22px;
+  margin-top: 6px;
+  line-height: 30px;
+  font-weight: 430;
+}
+.emergencies {
+  color: #5d5d5d;
+  font-size: 18px;
+  margin-bottom: 12px;
+  line-height: 27px;
+  margin-top: 40px;
+  min-width: 350px;
+  width: 100%;
+  font-weight: light;
+  font-family: AvenirLTPro-Book;
+  /* line-height: 1.5; */
+  font-family: Ubuntu, Cantarell, Helvetica Neue, sans-serif;
+}
+
+#bot {
+  padding: 12px 7%;
+  background-color: #5d5d5d;
+  text-decoration: none;
+  font-size: large;
+  border-radius: 25px;
+  border: #9c3353;
+  color: white;
+
+  text-align: center;
+  letter-spacing: 0.5px;
+  transition: background-color 0.2s ease-out;
+  cursor: pointer;
+}
+#bot:hover {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+#price {
+  height: 80px;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: -20px;
+}
+.raiser {
+  height: 70%;
+  width: 19%;
+  border-right: 0.3px solid gray;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  line-height: 0.8cm;
+  color: #9c3353;
+  font-size: 19px;
+  font-weight: 450;
+  /* padding-left: 20px; */
+}
+.raised {
+  height: 70%;
+  width: 25%;
+  border-right: 0.3px solid gray;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  line-height: 0.8cm;
+  color: #9c3353;
+  font-size: 19px;
+  font-weight: 450;
+  padding-left: 20px;
+}
+.donation {
+  height: 70%;
+  width: 19%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  line-height: 0.8cm;
+  color: #9c3353;
+  font-size: 19px;
+  font-weight: 450;
+  padding-left: 20px;
+}

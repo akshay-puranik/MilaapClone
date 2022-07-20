@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&display=swap" rel="stylesheet">
+
+<script src="https://kit.fontawesome.com/b1aa49fc63.js" crossorigin="anonymous"></script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="styles/fundraiser.css">
+    <title>Document</title>
+</head>
+<body>   
+    <div id="fr_nav">
+        <div id="fr_nav_left">
+            <img id="fr_logo" src="https://assets.milaap.org/assets/milaap-logo-tiny-4d3dbc4e55c2aaec351f0f376329c624236c4d6266b910f472684e70603f600d.png" alt="logo">
+            <h3>Setup fundraiser</h3>
+        </div>
+        <div id="fr_nav_step">
+            <p>Step 1 </p>
+            <p> of 4</p>
+        </div>
+    </div>
+
+
+    <div id="fr_main">
+        <div id="fr_top_title">
+            <p>Basic Details</p>
+        </div>
+        <div id="fr_cause_box">
+            <div id="fr_cause">
+                <h5>I am raising funds for a/an</h5>
+                <h5 id="fr_cause_text">Medical</h5>
+                <h5>cause</h5>
+            </div>
+            <div id="fr_cause_selection">
+                <div class="fr_select_div" onclick="d_medical()" id="fr_Medical">
+                    <i class="fa-solid fa-stethoscope"></i>
+                    <p class="fr_select_p" id="fr_cause_medical_p">Medical</p>
+                </div>
+                <div class="fr_select_div" onclick="education()" id="fr_Education">
+                    <i class="fa-solid fa-book-open-reader"></i>
+                    <p class="fr_select_p" id="fr_cause_education_p">Education</p>
+                </div>
+                <div class="fr_select_div" onclick="memorial()" id="fr_Memorial">
+                    <i class="fa-solid fa-monument"></i>
+                    <p class="fr_select_p" id="fr_cause_memorial_p">Memorial</p>
+                </div>
+                <div class="fr_select_div" onclick="other()" id="fr_Others">
+                    <i class="fa-solid fa-ellipsis"></i>
+                    <p class="fr_select_p" id="fr_cause_other_p">Others</p>
+                </div>
+            </div>
+        </div>
+        <div id="fr_form_box">
+            <form onsubmit="main(event)" id="fr_form">
+                <input id="fr_name" type="text" placeholder="Name" required>
+                <br>
+                <input id="fr_email" type="email" placeholder="Email ID" required>
+                <div fr_det_phone>
+                    <select class="fr_num" name="" id="+91" >
+                        <option value="">+91</option>
+                    </select>
+                    <input class="fr_num" id="fr_phonenum" inputmode="numeric" minlength="10" maxlength="10" placeholder="Phone number" required>
+                    <hr>
+                </div>
+                
+           
+        </div>
+
+    </div>
+    <div id="sub_box">
+        <div>
+            <input type="submit">
+        </div> 
+    </form>
+    </div>
+    <div id="overlay"></div>
+    <div class="popinput" id="popinput">
+        <input id="otpinput" type="password" maxlength="4" minlength="4" placeholder="Enter your OTP" required>
+        <br>
+        <button class="popbuttn" onclick="checkotp(event)">Submit</button>    
+    </div>
+    <div class="correct" id="popcorrect">
+        <img src="https://cdn-icons-png.flaticon.com/512/463/463574.png" alt="">
+        <h3>Sucessful</h3>
+        <button class="popbuttn" onclick="logoclick(event)">OK</button>
+    </div>
+    <div class="wrong" id="popwrong">
+        <img src="https://cdn-icons-png.flaticon.com/512/399/399274.png" alt="">
+        <h3>Wrong otp</h3>
+        <button class="popbuttn" onclick="window.location.reload()">Try again</button>
+    </div>
+</body>
+<script src="scripts/fundraiser.js"></script>
+</html>

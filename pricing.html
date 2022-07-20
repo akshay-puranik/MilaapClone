@@ -16,7 +16,7 @@
             width: 50%;display: flex;align-items: center;justify-content: center;
         }
         #topone>img{
-            width: 400px;
+            height: 100%;background-color: transparent;
         }
         #toptwo>h1{
            color: white;padding-top: 40px;
@@ -26,22 +26,85 @@
         }
         button{
             width: 220px;height: 50px;border-radius: 30px;color: #9C3353;margin-top: 40px;border: transparent;
-            font-size: 20px;
+            font-size: 20px;background-color: white;
         }
         hr{
             margin-top: 10px;
         }
+
+        #midh1{
+            text-align: center;padding-top: 30px;font-weight: bold;
+        }
+        #midp{
+            text-align: center;margin-top: 30px;font-size: 20px;color: grey;
+        }
+
+        #midbox{
+            width: 500px;height: 150px;margin: auto;margin-top: 30px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            border-radius: 20px;
+        }
+        #midbox1{
+            display: flex;justify-content: center;align-items: center;height: 100px;
+            justify-content: space-around;
+        }
+        #midbox1>p:nth-child(1){
+            font-size: 20px;
+        }
+
+        #slidecontainer{
+        width: 100%;
+        }
+        .slider{
+            width: 100%;
+            opacity:0.5 ;
+             }
+
+          #calculate{
+            border: 1px solid;width: 500px;height:100px ;
+            margin: auto;border-radius: 20px;margin-top: 30px;
+            background-color: #9C3353;
+          }
+          #calculate>button{
+            margin-left: 30%;margin-top: 5%;
+          }   
+          #bottom{
+            width: 100%;height: 80px;background-color: rgb(213, 236, 243);margin-top: 30px;
+            border: transparent;
+          }
+          #bottom>p{
+            text-align: center;font-size: 30px;padding-top: 20px;
+            font-weight: bold;
+          }
+
+          #bottompic>img{
+             width:100% ;
+          }
+          #lastbtn{
+            background-color: #9C3353;color: white;
+            position: absolute;left: 600;bottom: -870px;
+          }
+
+          #lastline{
+            border: 1px solid;width: 100%;height: 100px;
+            background-color: #9C3353;color: white;
+            display: flex;justify-content: center;align-items: center;
+            font-size: 25px;
+          }
+
+
+
 
 
     </style>
 </head>
 <body>
     <div id="top">
-        <div id="topone"><img src="https://www.data-8.co.uk/media/2695/working-data-8.png?anchor=center&mode=crop&width=800&height=800&rnd=132609759340000000" alt="error"></div>
+        <div id="topone"><img src="Assets/topdiv_teamworkpic.png" alt="error"></div>
         
         <div id="toptwo">
             <h1>FREE FUNDRAISING FOR ALL!</h1>
-            <h1>0%  PLATFORM FEES</h1>
+            <h1> 0% PLATFORM FEES</h1>
             <hr>
             <h2>RAISE MAXIMUM FUNDS FOR THE CAUSE YOU </h2>
             <h2>CARE ABOUT</h2>
@@ -49,5 +112,32 @@
             <button>Start a fundraiser</button>
         </div>
     </div>
+
+
+    <h1 id="midh1">Fundraiser goal calculator</h1>
+    <p id="midp">A simple way to plan and achieve your fundraiser goal</p>
+
+    <div id="midbox">
+        <div id="midbox1">
+            <p>I want to raise:</p>
+            <div><p>₹ INR 🡇 1,00,000 </p><hr></div>
+             </div>
+
+             <div id="slidecontainer">
+                <input type="range" min="100000" max="10000000" value="50" class="slider" id="myRange">
+              </div>
+    </div>
+
+    <div id="calculate">
+        <button>Calculate</button>
+    </div>
+
+    <div id="bottom"><p>Why choose Milaap?</p></div>
+
+    <div id="bottompic"><img src="../assets/bottompic.png" alt="error"></div>
+
+<button id="lastbtn">Start a fundraiser</button>
+
+<div id="lastline">Read what people are saying about Milaap!</div>
 </body>
 </html>

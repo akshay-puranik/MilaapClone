@@ -7,23 +7,25 @@
   <title></title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="">
+  <link rel="stylesheet" href="donation_styling.css">
   <script src="" async defer></script>
 </head>
 
 <body>
   <div id="donation_form_container">
-    <h2>Make a secure donation</h2>
-    <hr>
+    <div id="donation_form_header">
+      <h3>Make a secure donation</h3>
+    </div>
+    <hr id="donor_form_rule">
     <form id="donation_form_complete">
-      <div class="to_be_flexed">
+      <div class="to_be_flexed" id="donation_amount_input">
         <div>
           <p>Currency</p>
           <h3>₹ INR</h3>
         </div>
         <div>
           <label>Amount</label>
-          <input required type="Number" id="donation_amount">
+          <input required type="tel" id="donation_amount" placeholder="Amount">
         </div>
       </div>
       <div id="donation_tagline">

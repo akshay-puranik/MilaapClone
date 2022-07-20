@@ -1,0 +1,175 @@
+body
+{
+    font-family: 'Poppins', sans-serif;
+    margin: 0%;
+    text-align: center;
+    /* margin-left: 7%;
+    margin-right: 7%; */
+    
+}
+
+#fr_nav_step
+{
+    display: flex;
+}
+
+#fr_nav_step>p:first-child
+{
+    margin-right: 5px;
+    color: green;
+}
+#fr_nav_left
+{
+    display: flex;
+    align-items: center;
+}
+#fr_nav_left>h3
+{
+    font-weight: 400;
+    align-items: center;
+}
+
+#fr_nav
+{
+    display: flex;
+    position: relative;
+    z-index: 1;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 7%;
+    padding-right: 7%;
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+    margin-bottom: 0%;
+}
+
+#fr_logo
+{
+    height: 40px;
+    width: 100px;
+    margin-top: -6px;
+    margin-right: 30px;
+}
+
+/* mid section */
+
+#fr_main
+{
+
+    display: grid;
+    grid-template-columns: repeat(1,auto);
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+#fr_top_title
+{
+    margin: auto;
+    width: 200px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    background-color: rgb(235, 235, 235);
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+#fr_cause_box
+{
+    width: 100%;
+    text-align: center;
+}
+
+#fr_cause
+{
+    display: flex;
+    justify-content: center;
+}
+
+#fr_cause>h5
+{
+    margin-right: 5px;
+    font-weight: 400;
+}
+
+#fr_cause_selection
+{
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    gap: 10px;
+    padding: 25px;
+    border-radius: 3px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    margin-bottom: 60px;
+}
+
+#fr_cause_selection>div
+{
+    display: flex;
+    width: 150px;
+    padding: 15px;
+    padding-left: 30px;
+    border-radius: 3px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    align-items: center;
+    /* background-color: #691a47; */
+}
+
+#fr_cause_selection>div>p
+{
+    margin: 0%;
+    margin-left: 20px;
+}
+
+#fr_form_box>#fr_form>input
+{
+    width: 460px;
+    border: none;
+    border-bottom: 1px solid rgb(190, 190, 190);
+    margin-bottom: 35px;
+}
+
+.fr_num
+{
+    border: none;
+}
+
+#fr_phonenum
+{
+    width: 410px;
+}
+
+hr
+{
+    margin: 0%;
+    border: none;
+    border: .5px solid rgb(190, 190, 190);
+}
+
+#sub_box
+{
+    width: 100%;
+    position: fixed;
+    bottom: 0%;
+    display: flex;
+    justify-content: center;
+}
+
+#sub_box>div
+{
+    display: flex;
+    justify-content: end;
+    width: 60%;
+    height: 70px;
+    background-color: #691a47;
+    align-items: center;
+    border-radius: 3px;
+   
+}
+
+#sub_box>div>input
+{
+    height: 40px;
+    width: 150px;
+    margin-right: 10px;
+    border-radius: 20px;
+    border: none;
+}

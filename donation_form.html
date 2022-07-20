@@ -15,30 +15,58 @@
   <div id="donation_form_container">
     <h2>Make a secure donation</h2>
     <hr>
-    <div>
-      <div>
-        <p>Currency</p>
-        <h3>"rupee symbol" INR</h3>
+    <form id="donation_form_complete">
+      <div class="to_be_flexed">
+        <div>
+          <p>Currency</p>
+          <h3>₹ INR</h3>
+        </div>
+        <div>
+          <label>Amount</label>
+          <input required type="Number" id="donation_amount">
+        </div>
       </div>
-      <div>
-        <label>Amount</label>
-        <input type="Number" id="donation_amount">
+      <div id="donation_tagline">
+        <p>Your donation can have a BIGGER impact, a sponsor will add an additional 10%.</p>
       </div>
-    </div>
-    <p>Your donation can have a BIGGER impact, a sponsor will add an additional 10%.</p>
-    <div>
-      <p>Milaap charges NO fees. We rely on donors like you to cover for our expenses. Kindly consider a tip. Thank you 🙏</p>
-      <label>Include a tip of</label>
-      <select name="donation_tip" id="donation_tip">
-        <option value="400">8% (₹ 400.00)</option>
-        <option value="500">10% (₹ 500.00)</option>
-        <option value="600">12% (₹ 600.00)</option>
-        <option value="750">15% (₹ 750.00)</option>
-      </select>
-    </div>
-    <input type="text" id="donor_name">
-    
+      <div id="donation_tip_container">
+        <div>
+          <p>Milaap charges NO fees. We rely on donors like you to cover for our expenses. Kindly consider a tip. Thank you 🙏</p>
+        </div>
+        <div id="donation_tip_amount" class="to_be_flexed">
+          <label>Include a tip of</label>
+          <select name="donation_tip" id="donation_tip">
+            <option value="400">8% (₹ 400.00)</option>
+            <option value="500">10% (₹ 500.00)</option>
+            <option value="600">12% (₹ 600.00)</option>
+            <option value="750">15% (₹ 750.00)</option>
+          </select>
+        </div>
+      </div>
+      <input required type="text" id="donor_name" placeholder="Name">
+      <div class="to_be_flexed">
+        <select name="donor_country" id="donor_country">
+          <option value="+91">India</option>
+          <option value="+1">United States of America</option>
+        </select>
+        <input required type="tel" name="donor_mobile_number" placeholder="Phone number" id="donor_mobile_number">
+      </div>
+      <input required type="donor_email" placeholder="Email id">
+  
+      <div id="donor_nationality">
+        <input required type="radio" id="donor_nationality"><label>I'm an Indian National</label>
+        <input required type="radio" id="donor_nationality"><label>I'm not an Indian National</label>
+      </div>
+  
+      <label>Donate Anonymously</label>
+      <input required type="submit" name="confirm_donation" id="confirm_donation">
+    </form>
+
   </div>
 </body>
 
 </html>
+
+<script>
+
+</script>

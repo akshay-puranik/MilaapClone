@@ -33,6 +33,29 @@
      #country>div>hr{
         width: 300px;
      }
+     .mapouter{
+      position:relative;text-align:right;height:500px;width:600px;
+     }
+     .gmap_canvas {
+      overflow:hidden;background:none!important;height:500px;width:600px;
+   }
+
+   #container{
+      border: 1px solid;width: 45%;height: auto;margin: auto;margin-top: 50px;
+   }
+
+   #address>p:nth-child(1){
+     text-align: center;margin-top: 20px;
+   }
+   #address>p:nth-child(2){
+      color: #9C3353;margin-left: 170px;margin-top: 20px;
+   }
+   #address>p:nth-child(3){
+      color: #9C3353;margin-left: 170px;margin-top: 20px;
+   }
+
+
+
     </style>
 </head>
 <body>
@@ -52,5 +75,31 @@
         <div id="sin"><P>SINGAPORE</P> <hr> </div>
         <div id="us"><p>US</p> <hr> </div>
     </div>
+
+     <div id="address">
+      <p>Milaap Social Ventures India Pvt. Ltd. ClayWorks Create – building,11th KM Create Campus, Arakere Bannerghatta Rd, Bangalore, Karnataka, India 560076</p>
+      <p> <span><img src="../asset2/emaillogo.png" alt="error"></span>  <span>feedback@milaap.org</span></p>
+      <p><span><img src="../asset2/call-logo.png" alt="error"></span> <span>9916174848</span></p>
+   
+   </div>
+
+    <div id="container"></div>
+    <div class="mapouter">
+      <div class="gmap_canvas">
+      <iframe width="600" height="500" id="gmap_canvas"  frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-to.org"></a>
+      <br>
 </body>
 </html>
+
+<script>
+//<a href="https://www.embedgooglemap.net">google maps iframe generator</a></div></div>
+
+
+let url = "https://maps.google.com/maps?q=Milaap%20Social%20Ventures%20India%20Pvt.%20Ltd.%20ClayWorks%20Create%20%E2%80%93%20building,11th%20KM%20Create%20Campus,%20Arakere%20Bannerghatta%20Rd,%20Bangalore,%20Karnataka,%20India%20560076&t=&z=13&ie=UTF8&iwloc=&output=embed"
+  
+ let container = document.getElementById("container") ;
+ let iframe =document.getElementById("gmap_canvas")
+    iframe.src=url;
+
+ container.append(iframe);
+  </script>

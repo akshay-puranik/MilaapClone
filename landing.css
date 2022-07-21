@@ -10,7 +10,7 @@ body {
   background-image: url(https://cimages.milaap.org/milaap/image/upload/v1655996033/production/entity_details/milaap_page/524/Desktop_img_2__5__1655996032.jpg);
   background-repeat: no-repeat;
   background-size: 40% 100%;
-  background-attachment: fixed;
+
   background-position: right;
   padding-top: -50%;
 }
@@ -19,7 +19,7 @@ body {
   width: 58%;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   margin: auto;
-  margin-top: 9%;
+  margin-top: 8%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -84,7 +84,6 @@ body {
   border-radius: 25px;
   border: #9c3353;
   color: white;
-
   text-align: center;
   letter-spacing: 0.5px;
   transition: background-color 0.2s ease-out;
@@ -105,24 +104,15 @@ body {
   height: 70%;
   width: 19%;
   border-right: 0.3px solid gray;
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
   line-height: 0.8cm;
-  color: #9c3353;
   font-size: 19px;
   font-weight: 450;
-  /* padding-left: 20px; */
 }
 .raised {
   height: 70%;
   width: 25%;
   border-right: 0.3px solid gray;
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
   line-height: 0.8cm;
-  color: #9c3353;
   font-size: 19px;
   font-weight: 450;
   padding-left: 20px;
@@ -130,12 +120,245 @@ body {
 .donation {
   height: 70%;
   width: 19%;
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
   line-height: 0.8cm;
-  color: #9c3353;
+  /* color: #9c3353; */
   font-size: 19px;
   font-weight: 450;
   padding-left: 20px;
+}
+.rupee {
+  color: #691a47;
+  font-size: 18px;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen-Sans,
+    Ubuntu, Cantarell, Helvetica Neue, sans-serif;
+}
+.des {
+  color: #5d5d5d;
+  margin-top: -20px;
+  font-family: AvenirLTPro-Large;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen-Sans,
+    Ubuntu, Cantarell, Helvetica Neue, sans-serif;
+}
+#announcement {
+  height: 64px;
+  width: 90%;
+  background: -webkit-linear-gradient(left, #eee7e7, #fff);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  border-left: 7px solid #212121;
+  border-radius: 3px;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 35px;
+}
+.pic-1 {
+  /* padding-left: 30px; */
+  height: 100%;
+  width: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-left: 15px;
+}
+.pic-2 {
+  height: 100%;
+  width: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 15px;
+}
+.pic-3 {
+  height: 100%;
+  width: 10%;
+  font-size: 50px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 15px;
+  margin-right: 15px;
+  color: #8a8787;
+}
+#description {
+  height: 100%;
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #9c3353;
+  font-size: 16px;
+  font-weight: 500;
+}
+#container1 {
+  height: 50px;
+  width: 70%;
+  margin: auto;
+  display: flex;
+}
+#lines {
+  width: 50%;
+  height: 35px;
+  margin: auto;
+  position: relative;
+}
+#lines::after,
+#lines::before {
+  content: "";
+  position: absolute;
+  margin: auto;
+  height: 0.5px;
+  background: #7a7a7a;
+  width: 35%;
+  top: 45%;
+}
+#lines::after {
+  left: 0;
+}
+#lines::before {
+  right: 0;
+}
+#diamonds {
+  position: absolute;
+  height: 25px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  margin-top: 4px;
+}
+.svg {
+  height: 11px;
+  width: 11px;
+  border: 1px solid gray;
+  transform: rotate(45deg);
+  background-color: #a0a0a0;
+  border: none;
+}
+.svg1 {
+  height: 18px;
+  width: 18%;
+  border: 1px solid gray;
+  transform: rotate(45deg);
+  background-color: #9c3353;
+  border: none;
+}
+#input {
+  height: 40px;
+  width: 56%;
+  margin: auto;
+  margin-top: 18px;
+  border: 1px solid #691a47;
+  /* border-radius: 25px; */
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+#input-group {
+  height: 100%;
+  width: 87%;
+  margin-left: 8px;
+  border: 0px;
+  font-size: small;
+}
+#input-group:focus {
+  outline: none;
+}
+#search {
+  height: 40px;
+  width: 10%;
+  background-color: #691a47;
+  display: flex;
+  align-items: center;
+  border: none;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+#category {
+  height: 120px;
+  width: 56%;
+  margin: auto;
+  margin-top: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#Assam_div {
+  height: 120px;
+  width: 22%;
+  border-radius: 5px;
+  background-color: #691a47;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 15px;
+  padding: 20px 30px;
+}
+#Assam_text {
+  margin: 10px 10px;
+  font-size: 14px;
+  color: #fff;
+}
+#Medical_div {
+  height: 120px;
+  width: 22%;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 15px;
+  padding: 20px 30px;
+}
+#Medical_text {
+  margin: 10px 10px;
+  font-size: 14px;
+}
+#Memorial_div {
+  height: 120px;
+  width: 22%;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 15px;
+
+  padding: 20px 30px;
+}
+
+#Memorial_text {
+  margin: 10px 10px;
+  font-size: 14px;
+}
+#Others_div {
+  height: 120px;
+  width: 22%;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 15px;
+  padding: 20px 30px;
+}
+
+#Others_text {
+  width: 100%;
+  height: 20px;
+  font-size: 14px;
+}
+#showdata {
+  height: 400px;
+  width: 95%;
+  border: 1px solid gray;
+  margin: auto;
+  margin-top: 50px;
+}
+#list {
+  height: 500px;
+  width: 290px;
+  margin-top: 105%;
+  margin-left: -70px;
+  background-color: #fff;
+  border-radius: 5px;
+  border: 1px solid gray;
+  display: none;
 }

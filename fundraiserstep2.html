@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&display=swap" rel="stylesheet">
+
+<script src="https://kit.fontawesome.com/b1aa49fc63.js" crossorigin="anonymous"></script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="fr_styles/fundraiserstep2.css">
+    <title>Document</title>
+</head>
+<body> 
+    <div id="fr_nav">
+        <div id="fr_nav_left">
+            <img id="fr_logo" src="https://assets.milaap.org/assets/milaap-logo-tiny-4d3dbc4e55c2aaec351f0f376329c624236c4d6266b910f472684e70603f600d.png" alt="logo">
+            <h3>Setup fundraiser</h3>
+        </div>
+        <div id="fr_nav_step">
+            <p>Step 2 </p>
+            <p> of 4</p>
+        </div>
+    </div>  
+
+    <div id="fr_mid2">
+        <div id="fr_top_title">
+            <p>Beneficiary Details</p>
+        </div>
+        <div>
+
+            <select onchange="ben_type()" name="" id="ben_selection">
+                <option value="Myself">Myself</option>
+                <option value="Individual">Individual</option>
+                <option value="Group">Group</option>
+            </select>
+
+            <div id="fr_form_div">
+                <form id="myself_form">
+                    <input id="mydispic" type="url" placeholder="Display photo URL">
+                    <input id="myname" type="text" placeholder="Name">
+                    <input id="myage" type="text" placeholder="Age">
+                    <input id="myreside" type="text" placeholder="Residing in">
+                </form>
+
+                <form id="individual_form">
+                    <input id="inddispic" type="url" placeholder="Beneficiary's photo URL">
+                    <input id="indrelation" type="text" placeholder="Relation">
+                    <input id="indrelname" type="text" placeholder="Relative's Name">
+                    <input id="indage" inputmode="numeric" minlength="1" maxlength="3" placeholder="Age">
+                    <input id="indresid" type="text" placeholder="Residing in">
+                    <input id="indnum" inputmode="numeric" minlength="10" maxlength="10" placeholder="Beneficiary's Mobile no">
+                </form>
+
+                <form id="group_form">
+                    <input id="grpdispic" type="url" placeholder="Organisation photo URL">
+                    <input id="grpname" type="text" placeholder="Name">
+                    <input id="grpposition" type="text" placeholder="Position">
+                    <input id="grplocation" type="text" placeholder="Location">
+                    <input id="grppernum" inputmode="numeric" minlength="10" maxlength="10" placeholder="Personal contact no">
+                    <input id="grporgnum" inputmode="numeric" minlength="10" maxlength="10" placeholder="Organisation contact no">
+                </form>
+
+            </div>
+        </div>
+        <div id="sub_box">
+            <div>
+                <button onclick="tostep3()" id="frs2continue">Continue</button>
+            </div> 
+    </div>
+</body>
+<script src="fr_scripts/fundraiserstep2.js"></script>
+</html>

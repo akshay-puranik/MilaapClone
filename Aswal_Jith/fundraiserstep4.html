@@ -13,7 +13,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="fr_styles/fundraiserstep3.css">
+
+<link rel="stylesheet" href="fr_styles/fundraiserstep4.css">
     <title>Document</title>
 </head>
 <body>   
@@ -23,34 +24,33 @@
             <h3>Setup fundraiser</h3>
         </div>
         <div id="fr_nav_step">
-            <p>Step 3 </p>
+            <p>Step 4 </p>
             <p> of 4</p>
         </div>
     </div>
     <div id="fr_mid_3">
         <div id="fr_top_title">
-            <p>Cause details</p>
-        </div>
-        <div id="fr_form_div3">
-            <form onsubmit="main(event)">
-                <input id="fr_s3_title" type="text" placeholder="Ttile" required>
-                <input id="fr_s3_img1" type="url" placeholder="Image 1 url" required>
-                <input id="fr_s3_img2" type="url" placeholder="Image 2 url" required>
-                <input id="fr_s3_img3" type="url" placeholder="Image 3 url">
-                <input id="fr_s3_img4" type="url" placeholder="Image 4 url">
-                <input id="fr_s3_fund" inputmode="numeric" minlength="4" placeholder="Fund required" required>
-                <textarea id="fr_s3_story" name="" id="" cols="53" rows="10" placeholder="Brief your story here" required></textarea>
-                <input id="fr_s3_name" type="text" placeholder="Creator's name" required>
-                <input id="fr_s3_form" type="text" placeholder="Document url" required>
-                <input id="fr_s3_location" type="text" placeholder="Cause location">
+            <p>Verification</p>
         </div>
     </div>
+    <table id="tablebx" class="table">
+    </table>
     <div id="sub_box">
-        <div>
-            <input id="frs3continue" type="submit">
+        <div id="st4bttn">
+            <button id="frs4continue" onclick="verify(event)">Verify</button>
+            <button id="returnto1" onclick="tost1()">Cancel</button>
         </div> 
         </form>
     </div>
+    <div id="overlay"></div>
+    <div class="popinput" id="popinput">
+        <div>
+            <h3 id="vertext"></h3>
+            <img id="verificationimg" src="https://media3.giphy.com/media/swhRkVYLJDrCE/giphy.gif?cid=790b7611321f5d64b86f4ed1a0c9bbaf4d9ff348668fb439&rid=giphy.gif&ct=g" alt="">
+            <!-- <img id="verificationimg" src="https://media4.giphy.com/media/ibolLe3mOqHE3PQTtk/giphy.gif?cid=ecf05e47jh9w47gybilxwvzg882ro7t91kt8jqd4hiti74a1&rid=giphy.gif&ct=g" alt=""> -->
+        </div>  
+        <button id="verpop" onclick="tohome()">OK</button> 
+    </div>
 </body>
-<script src="fr_scripts/fundraiserstep3.js"></script>
+<script src="fr_scripts/fundraiserstep4.js"></script>
 </html>

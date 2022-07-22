@@ -13,7 +13,7 @@ function logoclick()
 {
     window.location.href = "fundraiser.html"
 }
-let fr_selection ="Medical"
+let fr_selection ="medical"
 function main(e)
 {
     e.preventDefault()
@@ -119,7 +119,6 @@ function checkotp(e)
 {
     e.preventDefault()
     let otpinput = document.getElementById("otpinput").value
-    console.log("checkotp:",otpinput)
     if(otpinput === "1234")
     {
         popcorrect()
@@ -154,10 +153,7 @@ function step1complete()
     let number =+document.getElementById("fr_phonenum").value
 
     let data = new fundraiser(fr_selection,name,mail,number)
-
-    dataarr = []
-    dataarr.push(data)
-    localStorage.setItem("step1data",JSON.stringify(dataarr))
+    localStorage.setItem("step1data",JSON.stringify(data))
 }
 
 function nextstep(e)

@@ -29,7 +29,7 @@ function main(e)
     let form = document.getElementById("fr_s3_form").value
     let location = document.getElementById("fr_s3_location").value
     let data = new causedetails(title,image1,image2,image3,image4,fund,name,story,form,location)
-    localStorage.setItem("causedata",JSON.stringify(data))
+    localStorage.setItem("causedata",JSON.stringify(data))   
 
     alert("Step 3 completed")
     window.location.href = "fundraiserstep4.html"

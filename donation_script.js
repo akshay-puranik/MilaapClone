@@ -2,12 +2,13 @@ let amt = document.querySelector("#donation_amount");
 amt.addEventListener("input", () => {
   let sub_button = document.querySelector("#confirm_donation");
   sub_button.value = `Continue to pay ₹ ${amt.value}`
-  console.log(amt.value);
-})
 
-let tip = document.querySelector("#donation_tip");
-tip.addEventListener("select", () => {
-  console.log(tip.value);
+  
+
+  tip_amount = document.querySelector("#donation_tip");
+
+
+  // console.log(amt.value);
 })
 
 let form = document.querySelector("#donation_form_complete").addEventListener("submit", () => {

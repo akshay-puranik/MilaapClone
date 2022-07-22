@@ -3,23 +3,23 @@ body {
   border: 0px;
   box-sizing: border-box;
 }
-#container {
-  height: 525px;
+#lp_container {
+  height: 500px;
   width: 100%;
   border: 1px solid white;
   background-image: url(https://cimages.milaap.org/milaap/image/upload/v1655996033/production/entity_details/milaap_page/524/Desktop_img_2__5__1655996032.jpg);
   background-repeat: no-repeat;
-  background-size: 40% 100%;
-
+  background-size: 40% 115%;
+  /* border: 1px solid gray; */
   background-position: right;
-  padding-top: -50%;
+  padding-top: -45%;
 }
-#urgent {
-  height: 50px;
+#lp_urgent {
+  height: 9%;
   width: 58%;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   margin: auto;
-  margin-top: 8%;
+  margin-top: 6.5%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -35,34 +35,35 @@ body {
   border-radius: 6px;
   -webkit-tap-highlight-color: transparent;
 }
-.bi {
-  margin-left: 15px;
+.lp_bi {
+  margin-left: 3%;
 }
-.bi:hover {
+.lp_bi:hover {
   cursor: pointer;
 }
-#heading {
-  height: 300px;
+#lp_heading {
+  height: 60%;
   width: 80%;
   margin: auto;
 }
-#heading1 {
-  height: 90%;
+#lp_heading1 {
+  height: 75%;
   width: 45%;
+  /* border: 1px solid red; */
   margin-top: 15px;
 }
-#Mil {
+#lp_Mil {
   margin-top: 6px;
   line-height: 33px;
 }
-.title {
+.lp_title {
   color: #9c3353;
   font-size: 22px;
   margin-top: 6px;
   line-height: 30px;
   font-weight: 430;
 }
-.emergencies {
+.lp_emergencies {
   color: #5d5d5d;
   font-size: 18px;
   margin-bottom: 12px;
@@ -76,48 +77,51 @@ body {
   font-family: Ubuntu, Cantarell, Helvetica Neue, sans-serif;
 }
 
-#bot {
-  padding: 12px 7%;
-  background-color: #5d5d5d;
+#lp_bot {
+  padding: 2% 7%;
+  background-color: #9c3353;
   text-decoration: none;
   font-size: large;
   border-radius: 25px;
-  border: #9c3353;
+  border: #da88a1;
   color: white;
   text-align: center;
   letter-spacing: 0.5px;
-  transition: background-color 0.2s ease-out;
+  transition: background-color 0.4s ease-out;
   cursor: pointer;
 }
-#bot:hover {
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+#lp_bot:hover {
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 12px;
 }
-#price {
-  height: 80px;
+#lp_price {
+  height: 14%;
   width: 80%;
+  /* border: 1px solid red; */
+  margin: auto;
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  margin-top: -20px;
+  margin-top: -4%;
+  /* margin-left: 0px; */
 }
-.raiser {
+.lp_raiser {
   height: 70%;
-  width: 19%;
+  width: 15%;
   border-right: 0.3px solid gray;
   line-height: 0.8cm;
   font-size: 19px;
   font-weight: 450;
 }
-.raised {
+.lp_raised {
   height: 70%;
-  width: 25%;
+  width: 20%;
   border-right: 0.3px solid gray;
   line-height: 0.8cm;
   font-size: 19px;
   font-weight: 450;
   padding-left: 20px;
 }
-.donation {
+.lp_donation {
   height: 70%;
   width: 19%;
   line-height: 0.8cm;
@@ -126,52 +130,57 @@ body {
   font-weight: 450;
   padding-left: 20px;
 }
-.rupee {
+.lp_rupee {
   color: #691a47;
   font-size: 18px;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen-Sans,
     Ubuntu, Cantarell, Helvetica Neue, sans-serif;
 }
-.des {
+.lp_des {
   color: #5d5d5d;
   margin-top: -20px;
   font-family: AvenirLTPro-Large;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen-Sans,
     Ubuntu, Cantarell, Helvetica Neue, sans-serif;
 }
-#announcement {
-  height: 64px;
-  width: 90%;
+#lp_announcement {
+  height: 60px;
+  width: 75%;
   background: -webkit-linear-gradient(left, #eee7e7, #fff);
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
     rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-  border-left: 7px solid #212121;
   border-radius: 3px;
-
+  border-left: 7px solid #212121;
+  /* margin: auto; */
   display: flex;
   align-items: center;
   justify-content: flex-end;
   gap: 10px;
-  margin-top: 35px;
+  margin-top: 2%;
+  margin-left: 10%;
 }
-.pic-1 {
+.lp_pic-1 {
   /* padding-left: 30px; */
   height: 100%;
   width: 10%;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: flex-end;
-  margin-left: 15px;
+  margin-left: -40px;
+  /* margin-right: -30px; */
+  margin-top: 10px;
+  transform: rotate(-22deg);
 }
-.pic-2 {
+.lp_pic-2 {
   height: 100%;
   width: 10%;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 15px;
+  margin-left: -15px;
+  margin-top: -25px;
 }
-.pic-3 {
+.lp_pic-3 {
   height: 100%;
   width: 10%;
   font-size: 50px;
@@ -183,30 +192,30 @@ body {
   margin-right: 15px;
   color: #8a8787;
 }
-#description {
+#lp_description {
   height: 100%;
   width: 40%;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #9c3353;
+  color: #212121;
   font-size: 16px;
   font-weight: 500;
 }
-#container1 {
+#lp_container1 {
   height: 50px;
   width: 70%;
   margin: auto;
   display: flex;
 }
-#lines {
+#lp_lines {
   width: 50%;
   height: 35px;
   margin: auto;
   position: relative;
 }
-#lines::after,
-#lines::before {
+#lp_lines::after,
+#lp_lines::before {
   content: "";
   position: absolute;
   margin: auto;
@@ -215,13 +224,13 @@ body {
   width: 35%;
   top: 45%;
 }
-#lines::after {
+#lp_lines::after {
   left: 0;
 }
-#lines::before {
+#lp_lines::before {
   right: 0;
 }
-#diamonds {
+#lp_diamonds {
   position: absolute;
   height: 25px;
   width: 100px;
@@ -235,7 +244,7 @@ body {
   margin: auto;
   margin-top: 4px;
 }
-.svg {
+.lp_svg {
   height: 11px;
   width: 11px;
   border: 1px solid gray;
@@ -243,7 +252,7 @@ body {
   background-color: #a0a0a0;
   border: none;
 }
-.svg1 {
+.lp_svg1 {
   height: 18px;
   width: 18%;
   border: 1px solid gray;
@@ -251,9 +260,9 @@ body {
   background-color: #9c3353;
   border: none;
 }
-#input {
+#lp_input {
   height: 40px;
-  width: 56%;
+  width: 45%;
   margin: auto;
   margin-top: 18px;
   border: 1px solid #691a47;
@@ -266,29 +275,31 @@ body {
   align-items: center;
   justify-content: flex-end;
 }
-#input-group {
+#lp_input-group {
   height: 100%;
   width: 87%;
   margin-left: 8px;
   border: 0px;
   font-size: small;
 }
-#input-group:focus {
+#lp_input-group:focus {
   outline: none;
 }
-#search {
+#lp_search {
   height: 40px;
   width: 10%;
   background-color: #691a47;
   display: flex;
   align-items: center;
+  justify-content: center;
   border: none;
   border-top-right-radius: 25px;
   border-bottom-right-radius: 25px;
 }
-#category {
+
+#lp_category {
   height: 120px;
-  width: 56%;
+  width: 45%;
   margin: auto;
   margin-top: 36px;
   display: flex;
@@ -297,31 +308,35 @@ body {
 }
 #Assam_div {
   height: 120px;
-  width: 22%;
+  width: 23%;
   border-radius: 5px;
   background-color: #691a47;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 15px;
   padding: 20px 30px;
 }
 #Assam_text {
-  margin: 10px 10px;
+  /* margin: 10px 10px; */
+  margin-top: 5px;
+  text-align: center;
   font-size: 14px;
   color: #fff;
 }
 #Medical_div {
   height: 120px;
-  width: 22%;
+  width: 23%;
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 15px;
   padding: 20px 30px;
 }
 #Medical_text {
-  margin: 10px 10px;
+  /* margin: 10px 10px; */
+  margin-top: 5px;
+  text-align: center;
   font-size: 14px;
 }
 #Memorial_div {
   height: 120px;
-  width: 22%;
+  width: 23%;
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 15px;
 
@@ -329,36 +344,255 @@ body {
 }
 
 #Memorial_text {
-  margin: 10px 10px;
+  /* margin: 10px 10px; */
+  margin-top: 5px;
+  text-align: center;
   font-size: 14px;
 }
 #Others_div {
   height: 120px;
-  width: 22%;
+  width: 23%;
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 15px;
   padding: 20px 30px;
 }
 
 #Others_text {
-  width: 100%;
-  height: 20px;
+  /* width: 100%;
+  height: 20px; */
+  text-align: center;
   font-size: 14px;
 }
-#showdata {
-  height: 400px;
-  width: 95%;
-  border: 1px solid gray;
-  margin: auto;
-  margin-top: 50px;
-}
-#list {
-  height: 500px;
+#lp_list {
+  height: 700px;
   width: 290px;
-  margin-top: 105%;
-  margin-left: -70px;
+  margin-top: 80%;
+  padding-top: 10px;
+  margin-left: -60px;
   background-color: #fff;
   border-radius: 5px;
-  border: 1px solid gray;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   display: none;
+}
+#lp_ul {
+  list-style: none;
+}
+.lp_li {
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px 0px;
+  margin-top: 6px;
+
+  font-size: 14px;
+  color: #691a47;
+}
+.lp_li:hover {
+  background-color: aqua;
+  width: 100%;
+  cursor: pointer;
+}
+.lp_icon_margin {
+  margin-right: 15px;
+}
+#lp_showdata {
+  height: 700px;
+  width: 78%;
+  border: 1px solid gray;
+  margin: auto;
+  margin-top: 45px;
+}
+
+#lp_see_more_fundraisers {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+  text-decoration: underline;
+  color: #691a47;
+  font-weight: 500;
+}
+#lp_scan_part {
+  height: 470px;
+  width: 88%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  background-color: rgb(255, 252, 247);
+  border-radius: 5px;
+  margin: auto;
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#lp_scan_part:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#lp_img_svg {
+  height: 70%;
+  width: 40%;
+  padding: 0% 9%;
+}
+#lp_details {
+  height: 90%;
+  width: 50%;
+}
+.lp_seam {
+  padding-top: 30px;
+  font-size: 22px;
+  width: 80%;
+
+  margin: auto;
+  text-align: center;
+  color: #212121;
+  font-family: AvenirLTPro-Medium;
+}
+#lp_fund_donate {
+  font-size: 16px;
+  width: 80%;
+  margin: auto;
+  margin-top: 15px;
+  color: #5d5d5d;
+  text-align: center;
+  font-family: AvenirLTPro-Medium;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen-Sans,
+    Ubuntu, Cantarell, Helvetica Neue;
+  font-weight: 400;
+}
+#lp_download_link {
+  height: 150px;
+  width: 150px;
+  padding: 5px;
+  border: 3px solid #9c3353;
+  margin: auto;
+  margin-top: 20px;
+}
+#lp_download_link > img {
+  width: 100%;
+  height: 100%;
+}
+#lp_qr_code {
+  font-size: 15px;
+  text-align: center;
+  color: #5d5d5d;
+  font-family: AvenirLTPro-Medium;
+  line-height: 1.5;
+  margin-top: 18px;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen-Sans,
+    Ubuntu, Cantarell, Helvetica Neue, sans-serif;
+  font-weight: 400;
+}
+.lp_play-store {
+  margin-left: 12%;
+  margin-right: 5px;
+}
+#lp_phone_call {
+  height: 130px;
+  width: 100%;
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #4e072f;
+  background-image: url(https://assets.milaap.org/packs/_/assets/images/home/floral-63b2cb34226ab4606c8743991d786df0.png);
+}
+#lp_call{
+  height: 60%;
+  width: 90%;
+  margin: auto;
+  background-color: #fff;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#lp_help_text
+{ 
+    margin-left: 8%; 
+    margin-top: 20px;
+    font-size: 23px;
+    color: #414040;
+    text-align: center;
+    
+}
+#lp_button
+{
+  height: 45px;
+  width: 20%;
+  background-color: #414040;
+  margin-left: 25px;
+  border-radius: 25px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#lp_button >img{
+  margin-right: 10px;
+}
+#lp_last_part
+{
+  height: 680px;
+  width: 100%;
+  background-image: url(https://assets.milaap.org/packs/_/assets/images/home/testimonial-bg-703d695dffc4e175064a2bd22140a262.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 100% 100%;
+}
+#lp_last_part>h3{
+  text-align: center;
+  margin-top: 11%;
+  color: #414040;
+}
+
+
+#lp_container2 {
+  height: 50px;
+  width: 55%;
+  margin: auto;
+  display: flex;
+}
+#lp_carosul
+{
+  height: 200px;
+  width: 60%;
+  margin: auto;
+  margin-top: 4%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#lp_contact_us
+{
+  
+  height: 40px;
+  width: 11%;
+  margin-left: 80%;
+  background-color: #474747;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 11%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  
+}
+#lp_contact_us>img{
+  height: 55%;
+  margin-right: 6px;
+}
+#lp_see_all_reviews
+{
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+  margin: auto;
+  color: #691a47;
+  margin-top: 50px;
+  text-decoration: underline;
 }

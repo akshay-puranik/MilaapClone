@@ -31,7 +31,7 @@ function Assam() {
   others_style_text.style.color = "black";
   others_style_img.src =
     "https://assets.milaap.org/assets/home/all-icon-c540de74d815e7275a4bbebda41374b9fc528ba1a5791d71cd28c73ab27fdcd7.png";
-  let div = document.getElementById("list");
+  let div = document.getElementById("lp_list");
   div.style.display = "none";
 }
 
@@ -55,7 +55,7 @@ function Medical() {
   others_style_text.style.color = "black";
   others_style_img.src =
     "https://assets.milaap.org/assets/home/all-icon-c540de74d815e7275a4bbebda41374b9fc528ba1a5791d71cd28c73ab27fdcd7.png";
-  let div = document.getElementById("list");
+  let div = document.getElementById("lp_list");
   div.style.display = "none";
 }
 
@@ -79,7 +79,7 @@ function Memorial() {
   others_style_text.style.color = "black";
   others_style_img.src =
     "https://assets.milaap.org/assets/home/all-icon-c540de74d815e7275a4bbebda41374b9fc528ba1a5791d71cd28c73ab27fdcd7.png";
-  let div = document.getElementById("list");
+  let div = document.getElementById("lp_list");
   div.style.display = "none";
 }
 
@@ -104,11 +104,6 @@ function Others() {
   others_style_img.src =
     "https://assets.milaap.org/assets/home/all-transparent-icon-fcf68b3f1f58a4a35193630459f762a8a3e2a502804a372d68901d9ea25a443c.png";
 
-  let div = document.getElementById("list");
+  let div = document.getElementById("lp_list");
   div.style.display = "block";
 }
-
-// function Others() {
-//   let div = document.getElementById("list");
-//   div.style.display = "block";
-// }

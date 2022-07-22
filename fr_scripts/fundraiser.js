@@ -28,6 +28,7 @@ function main(e)
     popinput.classList.add("open-popinput")
 
 }
+
 let select_div1 = document.getElementById("fr_Medical")
 let select_div1_text = document.getElementById("fr_cause_medical_p")
 let select_div2 = document.getElementById("fr_Education")

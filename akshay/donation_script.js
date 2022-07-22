@@ -3,12 +3,15 @@ amt.addEventListener("input", () => {
   let sub_button = document.querySelector("#confirm_donation");
   sub_button.value = `Continue to pay ₹ ${amt.value}`
 
-  
-
   tip_amount = document.querySelector("#donation_tip");
 
+  let current_tip = tip_amount.value * amt.value;
 
-  // console.log(amt.value);
+
+  tip_amount.addEventListener("change", () => {
+    current_tip = tip_amount.value * amt.value;
+    console.log(current_tip)
+  })
 })
 
 let form = document.querySelector("#donation_form_complete").addEventListener("submit", () => {

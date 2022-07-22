@@ -19,26 +19,111 @@
     </div>
 
     <div id="country">
-        <div><img src="../asset2/gmaplogo.png" alt="error"></div>
-        <div id="ind"> <p>INDIA</p> <hr> </div>
-        <div id="sin"><P>SINGAPORE</P> <hr> </div>
-        <div id="us"><p>US</p> <hr> </div>
+        
+        <div id="ind" onclick="india()"><span><img src="../asset2/gmaplogo.png" alt="error"></span> <p>INDIA</p> <hr> </div>
+        <div id="sin" onclick="singapore()"><P>SINGAPORE</P> <hr> </div>
+        <div id="us" onclick="US()"><p>US</p> <hr> </div>
     </div>
 
-     <div id="address">
+     <div id="india_address">
       <p>Milaap Social Ventures India Pvt. Ltd. ClayWorks Create – building,11th KM Create Campus, Arakere Bannerghatta Rd, Bangalore, Karnataka, India 560076</p>
       <p> <span><img src="../asset2/emaillogo.png" alt="error"></span>  <span>feedback@milaap.org</span></p>
       <p><span><img src="../asset2/call-logo.png" alt="error"></span> <span>9916174848</span></p>
-   
-   </div>
+     </div>
+
+     <div id="singapore" >
+        <p>Milaap Social Ventures Pte. Ltd.
+
+            C/O Jungle Ventures,
+            
+            79 Ayer Rajah Crescent, Block 79,
+            
+            Singapore 139955</p>
+
+
+          <p><span><img src="../asset2/emaillogo.png" alt=""></span> mayukh@milaap.org</p> 
+          <p><span><img src="../asset2/call-logo.png" alt=""></span> (+65) 3129 5466</p> 
+     </div>
+
+     <div id="USA">
+        <p>Milaap Social Ventures  USA Pvt. Ltd.
+
+            311 North Market Street – Suite 200
+            
+            Dallas, TX 75202</p>
+
+
+          <p><span><img src="../asset2/emaillogo.png" alt=""></span> feedback@milaap.org</p> 
+          <p><span><img src="../asset2/call-logo.png" alt=""></span> +1 (805) 590-7978</p> 
+     </div>
 
     <div id="container"></div>
     <div class="mapouter">
       <div class="gmap_canvas">
       <iframe width="600" height="500" id="gmap_canvas"  frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-to.org"></a>
       <br>
-</body>
-</html>
+
+      </div>
+      </div>
+    
+    <div id="last_box">
+        <h2 id="jtc">Join the conversation</h2>
+         <h3 id="social_sites">Join us on Facebook, Twitter, Instagram and YouTube as we share uplifting stories of successful fundraisers! </h3>
+        <div id="social_media">
+            <div id="fb">
+            <span><img src="https://pages.milaap.org/wp-content/uploads/2022/02/facebook-icon.png" alt="error"></span>
+            <p>2.4M likes on FACEBOOK</p>
+            </div>
+
+            <div id="twitter">
+            <span><img src="https://pages.milaap.org/wp-content/uploads/2022/02/twitter-icon.png" alt="error"></span>
+            <p>23.5K followers on TWITTER</p>
+            </div>
+
+            <div id="insta">
+            <span><img src="https://pages.milaap.org/wp-content/uploads/2022/02/instagram-icon.png" alt="error"></span>
+            <p>75.1K followers on INSTAGRAM</p>
+            </div>
+
+            <div id="ytube">
+            <span><img src="https://pages.milaap.org/wp-content/uploads/2022/02/youtube-icon.png" alt="error"></span>
+            <p>41K subscribers on YOUTUBE</p>
+            </div>
+
+        </div>
+         
+    </div>
+      
+    
+    <h1 id="formline">Let us know what you think</h1>
+
+    <div id="form">
+       <div id="credential">
+            
+            <div>
+                <input type="text" id="name" placeholder="Name">
+                 
+            </div>
+
+            <div>
+                <input type="email" id="mail" placeholder="Email address">
+                
+            </div>
+
+        </div>
+       
+
+        <textarea rows="10" cols="120" placeholder="You can type any suggestions or queries you might have. Let us help you!" id="description"></textarea>
+
+        <button onclick="suggestion()">Send</button>
+
+    </div>
+
+    <textarea name="" id="confirm" cols="90" rows="5" placeholder="Thanks for contacting us! We will be in touch with you shortly."></textarea>
+    
+    </body>
+
+    </html>
 
 <script src="connect.js">
 //<a href="https://www.embedgooglemap.net">google maps iframe generator</a></div></div>

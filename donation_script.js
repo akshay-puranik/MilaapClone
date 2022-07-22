@@ -1,9 +1,21 @@
+let amt = document.querySelector("#donation_amount");
+amt.addEventListener("input", () => {
+  let sub_button = document.querySelector("#confirm_donation");
+  sub_button.value = `Continue to pay ₹ ${amt.value}`
+  console.log(amt.value);
+})
+
+let tip = document.querySelector("#donation_tip");
+tip.addEventListener("select", () => {
+  console.log(tip.value);
+})
+
 let form = document.querySelector("#donation_form_complete").addEventListener("submit", () => {
   event.preventDefault();
   
   var donor_data = {}
   
-  donor_data.amount = document.querySelector("#donation_amount").value;
+  donor_data.amount = amt.value;
   donor_data.name = document.querySelector("#donor_name").value;
   donor_data.tip = document.querySelector("#donation_tip").value;
   donor_data.contact = document.querySelector("#donor_country").value + " " + document.querySelector("#donor_mobile_number").value;

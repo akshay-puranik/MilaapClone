@@ -81,6 +81,7 @@ body
 #fr_top_title
 {
     margin: auto;
+    margin-bottom: 60px;
     width: 200px;
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;

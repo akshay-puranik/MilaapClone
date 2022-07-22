@@ -11,7 +11,7 @@ class fundraiser
 
 function logoclick()
 {
-    window.location.href = "fundraisers.step2.html"
+    window.location.href = "fundraiser.html"
 }
 let fr_selection ="Medical"
 function main(e)
@@ -157,5 +157,10 @@ function step1complete()
     dataarr = []
     dataarr.push(data)
     localStorage.setItem("step1data",JSON.stringify(dataarr))
-    console.log(fr_selection)
+}
+
+function nextstep(e)
+{
+    e.preventDefault()
+    window.location.href="fundraiserstep2.html"
 }

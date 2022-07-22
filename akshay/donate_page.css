@@ -1,0 +1,59 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#main_container{
+  width: 70%;
+  display: flex;
+  margin: auto;
+}
+
+#left_section{
+  width: 60%;
+  margin-right: 30px;
+}
+
+#donation_section {
+  width: 40%;
+}
+
+#title{
+  width: 100%;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  text-align: center;
+}
+
+#fr_heading{
+  padding: 20px 0px;
+}
+
+#title p{
+  width: 100%;
+}
+
+#image_slideshow img {
+  width: 100%;
+}
+
+#donation_section{
+  border: 1px solid black;
+}
+
+#donate-supporters{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+}
+
+#tax_benifit_section{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}

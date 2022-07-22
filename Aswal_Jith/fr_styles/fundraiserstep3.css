@@ -3,9 +3,6 @@ body
     font-family: 'Poppins', sans-serif;
     margin: 0%;
     text-align: center;
-    /* margin-left: 7%;
-    margin-right: 7%; */
-    
 }
 
 #fr_nav_step
@@ -96,6 +93,7 @@ input
     border: none;
     border-bottom: 1px solid rgb(190, 190, 190);
     margin-bottom: 25px;
+    outline: none;
 }
 
 textarea

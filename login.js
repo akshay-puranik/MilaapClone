@@ -12,7 +12,7 @@ if(email==""){
     flag=false;
 }
 
-let password=form.password.value;
+var password=form.password.value;
 if(password==""){
     alert("Please enter ur password")
     flag=false;

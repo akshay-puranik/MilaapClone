@@ -88,19 +88,19 @@ color: #9C3353;margin-left: 170px;margin-top: 20px;
      display: flex;gap: 10px;margin-left: 110px;
   }
   #fb{
-    border: 1px solid white;display: flex;color: white;
+    border: 1px solid white;width: 280px; display: flex;color: white;
     justify-content: center;align-items: center;border-radius: 10px;
   }
   #twitter{
-    border: 1px solid white;display: flex;color: white;
+    border: 1px solid white;width: 280px;display: flex;color: white;
     justify-content: center;align-items: center;border-radius: 10px;
   }
   #insta{
-    border: 1px solid white;display: flex;color: white;
+    border: 1px solid white;width: 280px;display: flex;color: white;
     justify-content: center;align-items: center;border-radius: 10px;
   }
   #ytube{
-    border: 1px solid white;display: flex;color: white;
+    border: 1px solid white;width: 280px;display: flex;color: white;
     justify-content: center;align-items: center;border-radius: 10px;
   }
   #jtc{
@@ -109,3 +109,43 @@ color: #9C3353;margin-left: 170px;margin-top: 20px;
   #social_sites{
     color: white;padding: 10px 0px 20px 110px;
   }
+
+  #form{
+    width: 90%;height: 600px;
+   margin: auto;margin-top: 50px;
+  }
+ #credential{
+   display: flex;margin-bottom: 40px;margin-top: 40px;justify-content: center;
+   align-items: center;justify-content: space-evenly;
+ }
+
+
+ #name{
+   border: none;
+   border-bottom: 1px solid black;
+   width: 100%;
+ }
+
+ #mail{
+   border: none;
+   border-bottom: 1px solid black;
+   width: 100%;
+ }
+ #form>button{
+  margin-top: 30px; width: 300px;height: 50px;
+  border-radius: 25px;background-color: #9C3353;
+  color: white;font-size: large;border: transparent;
+ }
+ #formline{
+   font-weight: lighter;padding-left: 140px;margin-top: 30px; margin-bottom: 20px;
+ }
+ #description{
+   font-size: large;padding-top: 20px;font-weight: bold;
+   padding-left: 20px;border-radius: 10px;
+ }
+ #confirm{
+   font-size: 20px;padding-top: 50px;font-weight: bold;padding-left: 30px;
+   margin-left: 130px; border-radius: 10px;background-color: lightgreen;
+   display: none;
+
+ }

@@ -19,8 +19,8 @@
     </div>
 
     <div id="country">
-        <div><img src="../asset2/gmaplogo.png" alt="error"></div>
-        <div id="ind" onclick="india()"> <p>INDIA</p> <hr> </div>
+        
+        <div id="ind" onclick="india()"><span><img src="../asset2/gmaplogo.png" alt="error"></span> <p>INDIA</p> <hr> </div>
         <div id="sin" onclick="singapore()"><P>SINGAPORE</P> <hr> </div>
         <div id="us" onclick="US()"><p>US</p> <hr> </div>
     </div>
@@ -93,6 +93,33 @@
         </div>
          
     </div>
+      
+    
+    <h1 id="formline">Let us know what you think</h1>
+
+    <div id="form">
+       <div id="credential">
+            
+            <div>
+                <input type="text" id="name" placeholder="Name">
+                 
+            </div>
+
+            <div>
+                <input type="email" id="mail" placeholder="Email address">
+                
+            </div>
+
+        </div>
+       
+
+        <textarea rows="10" cols="120" placeholder="You can type any suggestions or queries you might have. Let us help you!" id="description"></textarea>
+
+        <button onclick="suggestion()">Send</button>
+
+    </div>
+
+    <textarea name="" id="confirm" cols="90" rows="5" placeholder="Thanks for contacting us! We will be in touch with you shortly."></textarea>
     
     </body>
 

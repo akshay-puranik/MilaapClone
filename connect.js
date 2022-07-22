@@ -42,3 +42,8 @@ let india = () => {
    document.getElementById("singapore").style.display="none";
    document.getElementById("USA").style.display = "block";
  }
+
+ let suggestion = () => {
+  document.getElementById("form").style.display="none";
+  document.getElementById("confirm").style.display="block";
+ }

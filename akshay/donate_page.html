@@ -8,8 +8,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="donate_page.css">
     <script src="donation_page.js" async defer></script>
+    <link rel="stylesheet" href="donation_styling.css">
+    <link rel="stylesheet" href="testing/index.css">
   </head>
   <body>
+    <div id="overlay">
+      <div id="donation_form_container">
+        <div id="donation_form_header">
+          <h3>Make a secure donation</h3>
+        </div>
+        <hr id="donor_form_rule">
+        <form id="donation_form_complete">
+          <div class="to_be_flexed" id="donation_amount_input">
+            <div>
+              <p>Currency</p>
+              <h3>₹ INR</h3>
+            </div>
+            <div>
+              <label>Amount</label>
+              <input required type="tel" id="donation_amount" placeholder="Amount">
+            </div>
+          </div>
+          <div id="donation_tagline">
+            <p>Your donation can have a BIGGER impact, a sponsor will add an additional 10%.</p>
+          </div>
+          <div id="donation_tip_container">
+            <div>
+              <p>Milaap charges NO fees. We rely on donors like you to cover for our expenses. Kindly consider a tip. Thank you 🙏</p>
+            </div>
+            <div id="donation_tip_amount" class="to_be_flexed">
+              <p>Include a tip of</p>
+              <select name="donation_tip" id="donation_tip" onchange="tipChange()">
+                <option id="opt_1" value="0.08">8% (₹ 00.00)</option>
+                <option id="opt_2" value="0.10">10% (₹ 00.00)</option>
+                <option id="opt_3" value="0.12">12% (₹ 00.00)</option>
+                <option id="opt_4" value="0.15">15% (₹ 50.00)</option>
+                <option id="opt_5" value="other">Other</option>
+              </select>
+            </div>
+          </div>
+          <input required type="text" id="donor_name" placeholder="Name">
+          <div id="mulinp_div" class="to_be_flexed">
+            <select name="donor_country" id="donor_country">
+              <option value="+91">+91</option>
+              <option value="+1">+1</option>
+            </select>
+            <input required type="tel" name="donor_mobile_number" placeholder="Phone number" id="donor_mobile_number">
+          </div>
+          <input required type="donor_email" placeholder="Email id" id="donor_email">
+
+          <div id="donor_nationality">
+            <div>
+              <input required type="radio" id="donor_nationality1" name="donor_nationality"><label for="donor_nationality1">I'm an Indian National</label>
+            </div>
+            <div>
+              <input required type="radio" id="donor_nationality2" name="donor_nationality"><label for="donor_nationality2">I'm not an Indian National</label>
+            </div>
+          </div>
+          <div id="submit_container">
+            <input required type="submit" name="confirm_donation" id="confirm_donation" value="Continue to pay ₹ 0">
+          </div>
+        </form>
+
+      </div>
+    </div>
     <div id="main_container">
       <div id="left_section">
         <div id="title">
@@ -57,9 +119,14 @@
                 <p>Story</p>
             </div>
             <div id="story_content">
-              <h3>[All the contributions shall be used for Medicines, Doctors & Logistics for On-Site Medical/Health relief camps across affected areas in different districts of Assam, India.]</h3>
+              <h4>[All the contributions shall be used for Medicines, Doctors & Logistics for On-Site Medical/Health relief camps across affected areas in different districts of Assam, India.]</h4>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio nihil eum, distinctio est illo, deserunt quidem neque ab ipsam dolore consectetur enim ad labore corporis recusandae corrupti quos possimus nostrum?
             </div>
+          </div>
+          <div id="start_fr">
+            <button id="create_new">
+              Create a fundraiser
+            </button>
           </div>
       </div>
       <div id="donation_section">
@@ -70,16 +137,16 @@
           </div>
           <a href="">60 supporters</a>
         </div>
-        <div class="first" id="fr_information">
-          <div class="completion_container">
-            <div class="outer">
-              <div class="inner">
-                <div class="num" data-num="60%">
-                  60%
-                </div>
-              </div>
-            </div>
-          </div>
+        <div class="containerpb">
+          <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+            <defs>
+              <linearGradient id="GradientColor">
+                <stop offset="0%" stop-color="#37d123" />
+                <stop offset="100%" stop-color="#37d123" />
+              </linearGradient>
+            </defs>
+            <circle cx="50" cy="100" r="25" stroke-linecap="round" />
+          </svg>
         </div>
         <div class="first" id="tax_benifit_section">
           <p>Receive<span class="col_change"> tax benefits </span> by donating to this cause.</p>

@@ -1,4 +1,4 @@
-let data = JSON.parse(localStorage.getItem("current_fundraiser")) || [];
+let data = JSON.parse(localStorage.getItem("display_data")) || [];
 
 console.log(data)
 

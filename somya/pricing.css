@@ -1,218 +1,300 @@
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
+
 #navbar_container {
-    background-color: white;
-    padding-left: 50px;
-    height: 80px;
-    width: 100%;
-    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-    display: flex;
-    justify-content: space-between;
-    position: fixed;
-    left: 0;
-    top: 0;
-    z-index: 5;
-  }
-
-  #user_logo img {
-    height: 100%;
-  }
-
-
-  #navbar_container>div {
-    display: flex;
-    gap: 15px;
-  }
-
-  .nav_element {
-    /* margin-left: 10px; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 18px;
-    width: min-content;
-    padding: 20px;
-  }
-
-  .nav_element:nth-child(6) {
-    width: max-content;
-    /* background-color: black; */
-  }
-
-  .nav_element:hover {
-    background-color: #a33555;
-    height: auto;
-    cursor: pointer;
-  }
-
-  #nav_start_fr_button {
-    font-size: large;
-    background-color: #a33555;
-    padding: 10px 30px;
-    color: aliceblue;
-    border-radius: 35px;
-    font-size: larger;
-  }
-
-  .to_be_padded_nav {
-    margin: 20px;
-  }
-
-  #logo_image {
-    margin-right: 30px;
-  }
-
-
-  .left_buttons {
-    height: inherit;
-  }
-
-  .full_size {
-    height: inherit;
-  }
-
-  #login_signup {
-    position: absolute;
-    right: 20px;
-    top: 90px;
-    /* border: 1px solid black; */
-    padding: 20px;
-    display: none;
-    /* transition: ease-in 0.5s; */
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  }
-
-  #login_signup a {
-    padding: 10px;
-    font-size: large;
-    text-decoration: none;
-    color: #a33555;
-  }
-
-  #login_signup a:first-child {
-    border-right: 1px solid #a33555;
-  }
-
-  #right_buttons {
-    margin-right: 55px;
-  }
-
-#top{
-    width: 100%;height: 400px;display: flex;background-color: #9C3353;margin-top: 80px;
-}
-#topone{
-    width: 50%;display: flex;align-items: center;justify-content: center;
-}
-#topone>img{
-    height: 100%;background-color: transparent;
-}
-#toptwo>h1{
-   color: white;padding-top: 40px;
-}
-#toptwo>h2{
-   color: white;padding-top: 20px;
-}
-button{
-    width: 220px;height: 50px;border-radius: 30px;color: #9C3353;margin-top: 40px;border: transparent;
-    font-size: 20px;background-color: white;
-}
-hr{
-    margin-top: 10px;
+  background-color: white;
+  padding-left: 50px;
+  height: 80px;
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 5;
 }
 
-#midh1{
-    text-align: center;padding-top: 30px;font-weight: bold;
-}
-#midp{
-    text-align: center;margin-top: 30px;font-size: 20px;color: grey;
+#user_logo img {
+  height: 100%;
 }
 
-#midbox{
-    width: 500px;height: 150px;margin: auto;margin-top: 30px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    border-radius: 20px;
-}
-#midbox1{
-    display: flex;justify-content: center;align-items: center;height: 100px;
-    justify-content: space-around;
-}
-#midbox1>p:nth-child(1){
-    font-size: 20px;
+
+#navbar_container>div {
+  display: flex;
+  gap: 15px;
 }
 
-#slidecontainer{
-width: 100%;
+.nav_element {
+  /* margin-left: 10px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  width: min-content;
+  padding: 20px;
 }
-.slider{
-    margin-left: 50px;
-    width: 80%;
-    opacity:0.5 ;
-     }
 
-  #calculate{
-    border: 1px solid;width: 500px;height:100px ;
-    margin: auto;border-radius: 20px;margin-top: 30px;
-    background-color: #9C3353;
-  }
-  #calculate>button{
-    margin-left: 30%;margin-top: 5%;
-  }   
-  #bottom{
-    width: 100%;height: 80px;background-color: rgb(213, 236, 243);margin-top: 30px;
-    border: transparent;
-  }
-  #bottom>p{
-    text-align: center;font-size: 30px;padding-top: 20px;
-    font-weight: bold;
-  }
+.nav_element:nth-child(6) {
+  width: max-content;
+  /* background-color: black; */
+}
 
-  #bottompic>img{
-     width:100% ;
-  }
-  #lastbtn{
-    background-color: #9C3353;color: white;
-    position: absolute;left: 600;bottom: -870px;
-  }
+.nav_element:hover {
+  background-color: #a33555;
+  height: auto;
+  cursor: pointer;
+}
 
-  #lastline{
-    border: 1px solid;width: 100%;height: 100px;
-    background-color: #9C3353;color: white;
-    display: flex;justify-content: center;align-items: center;
-    font-size: 25px;
-  }
+#nav_start_fr_button {
+  font-size: large;
+  background-color: #a33555;
+  padding: 10px 30px;
+  color: aliceblue;
+  border-radius: 35px;
+  font-size: larger;
+}
 
-  #faq{
-    width: 100%;height: 300px;
-  }
+.to_be_padded_nav {
+  margin: 20px;
+}
 
-  #faq>p{
-    padding-left: 100px;margin-top: 30px;
-  }
-  #faq>p:nth-child(1){
-    font-size: 25px;font-weight: bold;
-  }
+#logo_image {
+  margin-right: 30px;
+}
 
-  #faq>p:nth-child(2){
-    font-size: 20px;
-  }
-  #faq>hr{
-    width: 150px;margin-left: 100px;
-  }
 
-  #amount{
-    display: flex;
-    border-bottom: 1px solid grey;
-    gap: 30px;
-  }
-  #amount>p{
-    padding-left: 30px;
-  }
-  #amountToRaise{
+.left_buttons {
+  height: inherit;
+}
 
-    
-    border: none;
-    outline: none;
-  }
+.full_size {
+  height: inherit;
+}
+
+#login_signup {
+  position: absolute;
+  right: 20px;
+  top: 90px;
+  /* border: 1px solid black; */
+  padding: 20px;
+  display: none;
+  /* transition: ease-in 0.5s; */
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#login_signup a {
+  padding: 10px;
+  font-size: large;
+  text-decoration: none;
+  color: #a33555;
+}
+
+#login_signup a:first-child {
+  border-right: 1px solid #a33555;
+}
+
+#right_buttons {
+  margin-right: 55px;
+}
+
+#top {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  background-color: #9C3353;
+  margin-top: 80px;
+}
+
+#topone {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#topone>img {
+  height: 100%;
+  background-color: transparent;
+}
+
+#toptwo>h1 {
+  color: white;
+  padding-top: 40px;
+}
+
+#toptwo>h2 {
+  color: white;
+  padding-top: 20px;
+}
+
+button {
+  width: 220px;
+  height: 50px;
+  border-radius: 30px;
+  color: #9C3353;
+  margin-top: 40px;
+  border: transparent;
+  font-size: 20px;
+  background-color: white;
+}
+
+hr {
+  margin-top: 10px;
+}
+
+#midh1 {
+  text-align: center;
+  padding-top: 30px;
+  font-weight: bold;
+}
+
+#midp {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 20px;
+  color: grey;
+}
+
+#midbox {
+  width: 500px;
+  height: 150px;
+  margin: auto;
+  margin-top: 30px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 20px;
+}
+
+#midbox1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  justify-content: space-around;
+}
+
+#midbox1>p:nth-child(1) {
+  font-size: 20px;
+}
+
+#slidecontainer {
+  width: 100%;
+}
+
+.slider {
+  margin-left: 50px;
+  width: 80%;
+  opacity: 0.5;
+}
+
+#calculate {
+  border: 1px solid;
+  width: 500px;
+  height: 100px;
+  margin: auto;
+  border-radius: 20px;
+  margin-top: 30px;
+  background-color: #9C3353;
+}
+
+#calculate>button {
+  margin-left: 30%;
+  margin-top: 5%;
+}
+
+#bottom {
+  width: 100%;
+  height: 80px;
+  background-color: rgb(213, 236, 243);
+  margin-top: 30px;
+  border: transparent;
+}
+
+#bottom>p {
+  text-align: center;
+  font-size: 30px;
+  padding-top: 20px;
+  font-weight: bold;
+}
+
+#bottompic>img {
+  width: 100%;
+}
+
+#lastbtn {
+  background-color: #9C3353;
+  color: white;
+  display: block;
+  justify-self: center;
+  /* position: absolute;
+  left: 600;
+  bottom: -870px; */
+}
+
+#lastbtn:hover{
+  cursor: pointer;
+}
+
+#sfr_button{
+  width: 100%;
+  margin-top: -50px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+#lastline {
+  border: 1px solid;
+  width: 100%;
+  height: 100px;
+  background-color: #9C3353;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+}
+
+#faq {
+  width: 100%;
+  height: 300px;
+}
+
+#faq>p {
+  padding-left: 100px;
+  margin-top: 30px;
+}
+
+#faq>p:nth-child(1) {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+#faq>p:nth-child(2) {
+  font-size: 20px;
+}
+
+#faq>hr {
+  width: 150px;
+  margin-left: 100px;
+}
+
+#amount {
+  display: flex;
+  border-bottom: 1px solid grey;
+  gap: 30px;
+}
+
+#amount>p {
+  padding-left: 30px;
+}
+
+#amountToRaise {
+
+
+  border: none;
+  outline: none;
+}

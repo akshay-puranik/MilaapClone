@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* font-family: AvenirLTPro-Medium; */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   }
 
   #navbar_container {
@@ -58,9 +60,11 @@
   }
 
   #nav_start_fr_button {
-    font-size: large;
+    /* font-size: large; */
     background-color: #a33555;
     padding: 10px 30px;
+    display: flex;
+    align-items: center;
     color: aliceblue;
     border-radius: 35px;
     font-size: larger;

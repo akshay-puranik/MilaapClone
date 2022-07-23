@@ -238,15 +238,13 @@ let lp_memorial_data = [
 
 append(lp_assam_data);
 
-console.log(JSON.parse(localStorage.getItem("education")))
-
 if (JSON.parse(localStorage.getItem("education"))) {
   lp_assam_data.unshift(JSON.parse(localStorage.getItem("education")));
   append(lp_assam_data);
   console.log("ed")
 }
 if (JSON.parse(localStorage.getItem("medical"))) {
-  lp_medical_data.unshift(JSON.parse(localStorage.getItem("medical")));
+  lp_medical_data.unshift(JSON.parse(localStorage.getItem("medical"))[0]);
   append(lp_medical_data)
   console.log("med")
 }
@@ -363,6 +361,7 @@ let others_style = document.getElementById("Others_div");
 let others_style_text = document.getElementById("Others_text");
 let others_style_img = document.getElementById("Others_img");
 
+let x = 0;
 function Others() {
   assam_style.style.backgroundColor = "white";
   assam_style_text.style.color = "black";
@@ -385,8 +384,10 @@ function Others() {
     "https://assets.milaap.org/assets/home/all-transparent-icon-fcf68b3f1f58a4a35193630459f762a8a3e2a502804a372d68901d9ea25a443c.png";
 
   let div = document.getElementById("lp_list");
-  div.style.display = "block";
-  div.style.backgroundColor = "white";
+  if (x % 2 == 0) div.style.display = "block";
+  else div.style.display = "none";
+  x++;
+  // div.style.backgroundColor = "white";
 }
 
 function Assam() {
@@ -734,7 +735,7 @@ function Memorial() {
 
 function Assam_cart(data) {
   console.log(data);
-
-  localStorage.setItem("education", JSON.stringify(data));
+  localStorage.setItem("display_data", JSON.stringify(data));
+  window.location.href = "../akshay/donate_page.html";
 }
 

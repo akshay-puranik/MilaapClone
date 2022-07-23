@@ -3,6 +3,7 @@ body {
   border: 0px;
   box-sizing: border-box;
 }
+
 #lp_container {
   height: 450px;
   width: 100%;
@@ -14,6 +15,7 @@ body {
   background-position: right;
   padding-top: -45%;
 }
+
 #lp_urgent {
   height: 9%;
   width: 58%;
@@ -35,27 +37,33 @@ body {
   border-radius: 6px;
   -webkit-tap-highlight-color: transparent;
 }
+
 .lp_bi {
   margin-left: 3%;
 }
+
 .lp_bi:hover {
   cursor: pointer;
 }
+
 #lp_heading {
   height: 60%;
   width: 80%;
   margin: auto;
 }
+
 #lp_heading1 {
   height: 75%;
   width: 45%;
   /* border: 1px solid red; */
   margin-top: 15px;
 }
+
 #lp_Mil {
   margin-top: 6px;
   line-height: 33px;
 }
+
 .lp_title {
   color: #9c3353;
   font-size: 22px;
@@ -63,6 +71,7 @@ body {
   line-height: 30px;
   font-weight: 430;
 }
+
 .lp_emergencies {
   color: #5d5d5d;
   font-size: 18px;
@@ -90,9 +99,11 @@ body {
   transition: background-color 0.4s ease-out;
   cursor: pointer;
 }
+
 #lp_bot:hover {
   box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 12px;
 }
+
 #lp_price {
   height: 14%;
   width: 80%;
@@ -104,6 +115,7 @@ body {
   margin-top: -4%;
   /* margin-left: 0px; */
 }
+
 .lp_raiser {
   height: 70%;
   width: 15%;
@@ -112,6 +124,7 @@ body {
   font-size: 19px;
   font-weight: 450;
 }
+
 .lp_raised {
   height: 70%;
   width: 20%;
@@ -121,6 +134,7 @@ body {
   font-weight: 450;
   padding-left: 20px;
 }
+
 .lp_donation {
   height: 70%;
   width: 19%;
@@ -130,12 +144,14 @@ body {
   font-weight: 450;
   padding-left: 20px;
 }
+
 .lp_rupee {
   color: #691a47;
   font-size: 18px;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen-Sans,
     Ubuntu, Cantarell, Helvetica Neue, sans-serif;
 }
+
 .lp_des {
   color: #5d5d5d;
   margin-top: -20px;
@@ -143,6 +159,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen-Sans,
     Ubuntu, Cantarell, Helvetica Neue, sans-serif;
 }
+
 #lp_announcement {
   height: 60px;
   width: 75%;
@@ -159,6 +176,7 @@ body {
   margin-top: 2%;
   margin-left: 10%;
 }
+
 .lp_pic-1 {
   /* padding-left: 30px; */
   height: 100%;
@@ -171,6 +189,7 @@ body {
   margin-top: 10px;
   transform: rotate(-22deg);
 }
+
 .lp_pic-2 {
   height: 100%;
   width: 10%;
@@ -180,6 +199,7 @@ body {
   margin-left: -15px;
   margin-top: -25px;
 }
+
 .lp_pic-3 {
   height: 100%;
   width: 10%;
@@ -192,6 +212,7 @@ body {
   margin-right: 15px;
   color: #8a8787;
 }
+
 #lp_description {
   height: 100%;
   width: 40%;
@@ -202,18 +223,21 @@ body {
   font-size: 16px;
   font-weight: 500;
 }
+
 #lp_container1 {
   height: 50px;
   width: 70%;
   margin: auto;
   display: flex;
 }
+
 #lp_lines {
   width: 50%;
   height: 35px;
   margin: auto;
   position: relative;
 }
+
 #lp_lines::after,
 #lp_lines::before {
   content: "";
@@ -224,12 +248,15 @@ body {
   width: 35%;
   top: 45%;
 }
+
 #lp_lines::after {
   left: 0;
 }
+
 #lp_lines::before {
   right: 0;
 }
+
 #lp_diamonds {
   position: absolute;
   height: 25px;
@@ -244,6 +271,7 @@ body {
   margin: auto;
   margin-top: 4px;
 }
+
 .lp_svg {
   height: 11px;
   width: 11px;
@@ -252,6 +280,7 @@ body {
   background-color: #a0a0a0;
   border: none;
 }
+
 .lp_svg1 {
   height: 18px;
   width: 18%;
@@ -260,6 +289,7 @@ body {
   background-color: #9c3353;
   border: none;
 }
+
 #lp_input {
   height: 40px;
   width: 45%;
@@ -275,6 +305,7 @@ body {
   align-items: center;
   justify-content: flex-end;
 }
+
 #lp_input-group {
   height: 100%;
   width: 87%;
@@ -282,9 +313,11 @@ body {
   border: 0px;
   font-size: small;
 }
+
 #lp_input-group:focus {
   outline: none;
 }
+
 #lp_search {
   height: 40px;
   width: 10%;
@@ -306,6 +339,7 @@ body {
   align-items: center;
   justify-content: space-between;
 }
+
 #Assam_div {
   height: 120px;
   width: 22%;
@@ -314,6 +348,7 @@ body {
   box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 15px;
   padding: 18px 30px;
 }
+
 #Assam_text {
   /* margin: 10px 13px; */
   width: 100%;
@@ -322,6 +357,7 @@ body {
   font-size: 14px;
   color: #fff;
 }
+
 #Medical_div {
   height: 120px;
   width: 22%;
@@ -329,6 +365,7 @@ body {
   box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 15px;
   padding: 18px 30px;
 }
+
 #Medical_text {
   /* margin: 10px 13px; */
   width: 100%;
@@ -336,6 +373,7 @@ body {
   text-align: center;
   font-size: 14px;
 }
+
 #Memorial_div {
   height: 120px;
   width: 22%;
@@ -352,6 +390,7 @@ body {
   text-align: center;
   font-size: 14px;
 }
+
 #Others_div {
   height: 120px;
   width: 22%;
@@ -366,6 +405,7 @@ body {
   text-align: center;
   font-size: 14px;
 }
+
 #lp_list {
   height: 700px;
   width: 320px;
@@ -378,9 +418,11 @@ body {
   /* box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; */
   display: none;
 }
+
 #lp_ul {
   list-style: none;
 }
+
 .lp_li {
   position: sticky;
   height: 100%;
@@ -393,17 +435,20 @@ body {
   font-size: 14px;
   color: #691a47;
 }
+
 .lp_li:hover {
   background-color: aqua;
   width: 100%;
   cursor: pointer;
 }
+
 .lp_icon_margin {
   margin-right: 15px;
 }
+
 #lp_showdata {
   height: auto;
-  width:83%;
+  width: 83%;
   margin: auto;
   margin-top: 45px;
   display: grid;
@@ -419,10 +464,12 @@ body {
   border-radius: 6px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
+
 .name_lp_div {
   height: 55px;
   width: 100%;
 }
+
 .design_lp {
   height: 55px;
   width: 100%;
@@ -431,16 +478,19 @@ body {
   align-items: center;
   justify-content: space-around;
 }
+
 .design_lp1 {
   height: 65%;
   width: 60%;
   margin-top: -10px;
   border-right: 1px solid #5d5d5d;
 }
+
 .design_lp2 {
   height: 100%;
   width: 35%;
 }
+
 .discount_lp_div {
   height: 45px;
   width: 95%;
@@ -449,10 +499,11 @@ body {
   margin: auto;
   margin-top: 12px;
 }
+
 .discount_lp {
   font-size: 13px;
   margin-left: 10px;
- 
+
 }
 
 #lp_see_more_fundraisers {
@@ -463,6 +514,7 @@ body {
   color: #691a47;
   font-weight: 500;
 }
+
 #lp_scan_part {
   height: 465px;
   width: 90%;
@@ -476,18 +528,22 @@ body {
   align-items: center;
   justify-content: space-around;
 }
+
 #lp_scan_part:hover {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
+
 #lp_img_svg {
   height: 70%;
   width: 40%;
   padding: 0% 9%;
 }
+
 #lp_details {
   height: 90%;
   width: 50%;
 }
+
 .lp_seam {
   padding-top: 30px;
   font-size: 22px;
@@ -498,6 +554,7 @@ body {
   color: #212121;
   font-family: AvenirLTPro-Medium;
 }
+
 #lp_fund_donate {
   font-size: 16px;
   width: 80%;
@@ -510,6 +567,7 @@ body {
     Ubuntu, Cantarell, Helvetica Neue;
   font-weight: 400;
 }
+
 #lp_download_link {
   height: 150px;
   width: 150px;
@@ -518,10 +576,12 @@ body {
   margin: auto;
   margin-top: 20px;
 }
-#lp_download_link > img {
+
+#lp_download_link>img {
   width: 100%;
   height: 100%;
 }
+
 #lp_qr_code {
   font-size: 15px;
   text-align: center;
@@ -533,10 +593,12 @@ body {
     Ubuntu, Cantarell, Helvetica Neue, sans-serif;
   font-weight: 400;
 }
+
 .lp_play-store {
   margin-left: 12%;
   margin-right: 5px;
 }
+
 #lp_phone_call {
   height: 130px;
   width: 100%;
@@ -547,6 +609,7 @@ body {
   background-color: #4e072f;
   background-image: url(https://assets.milaap.org/packs/_/assets/images/home/floral-63b2cb34226ab4606c8743991d786df0.png);
 }
+
 #lp_call {
   height: 60%;
   width: 90%;
@@ -557,6 +620,7 @@ body {
   align-items: center;
   justify-content: center;
 }
+
 #lp_help_text {
   margin-left: 8%;
   margin-top: 20px;
@@ -564,6 +628,7 @@ body {
   color: #414040;
   text-align: center;
 }
+
 #lp_button {
   height: 45px;
   width: 20%;
@@ -575,9 +640,11 @@ body {
   align-items: center;
   justify-content: center;
 }
-#lp_button > img {
+
+#lp_button>img {
   margin-right: 10px;
 }
+
 #lp_last_part {
   height: 620px;
   width: 100%;
@@ -586,7 +653,8 @@ body {
   background-position: 0 0;
   background-size: 100% 100%;
 }
-#lp_last_part > h3 {
+
+#lp_last_part>h3 {
   text-align: center;
   margin-top: 11%;
   color: #414040;
@@ -598,6 +666,7 @@ body {
   margin: auto;
   display: flex;
 }
+
 #lp_carosul {
   height: 200px;
   width: 60%;
@@ -607,6 +676,7 @@ body {
   align-items: center;
   justify-content: center;
 }
+
 #lp_contact_us {
   height: 40px;
   width: 11%;
@@ -624,10 +694,12 @@ body {
   justify-content: center;
   font-size: 14px;
 }
-#lp_contact_us > img {
+
+#lp_contact_us>img {
   height: 55%;
   margin-right: 6px;
 }
+
 #lp_see_all_reviews {
   width: 100%;
   text-align: center;
@@ -637,7 +709,7 @@ body {
   margin-top: 50px;
   text-decoration: underline;
 }
-#lp_navbar
-{
+
+#lp_navbar {
   height: 70px;
 }

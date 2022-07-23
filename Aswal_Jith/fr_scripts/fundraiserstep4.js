@@ -104,7 +104,7 @@ function verify(e)
 
 function tohome()
 {
-    window.location.href="../Landing.html"
+    window.location.href="../Landing page/Landing.html"
 }
 
 function tost1()

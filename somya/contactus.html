@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="connect.css">
 </head>
 <body>
+    <div id="navbar"></div>
     <div id="topdiv">
         <div id="topdivone">
             <h2>Contact us</h2>
@@ -20,21 +21,21 @@
 
     <div id="country">
         
-        <div id="ind" onclick="india()"> 
+        <div id="ind"> 
              <div id="ind_gmap_logo"><img src="asset2/gmaplogo.png" alt="error"></div> 
              <div id="in"><p>INDIA </p></div>
         </div>
 
-        <div id="sin" onclick="singapore()"> 
+        <div id="sin"> 
             <div id="sin_gmap_logo"><img src="asset2/gmaplogo.png" alt="error"></div>  
             <div id="si"><P>SINGAPORE</P></div> 
          </div>
 
-        <div id="us" onclick="US()"> 
+        <div id="us"> 
             <div id="us_gmap_logo"><img src="asset2/gmaplogo.png" alt="error"></div>  
             <div id="dollar"><p>US</p></div>  
         </div>
-        
+
     </div>
 
      <div id="india_address">
@@ -127,7 +128,7 @@
 
         <textarea rows="10" cols="120" placeholder="You can type any suggestions or queries you might have. Let us help you!" id="description"></textarea>
 
-        <button onclick="suggestion()">Send</button>
+        <button id="send">Send</button>
 
     </div>
 
@@ -137,7 +138,7 @@
 
     </html>
 
-<script src="connect.js">
+<script src="connect.js" type="module">
 //<a href="https://www.embedgooglemap.net">google maps iframe generator</a></div></div>
 
 

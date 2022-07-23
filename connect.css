@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#topdiv{
+border: 1px solid;width: 100%;height: 380px;background-color: #9C3353;
+display: flex;justify-content: center;align-items: center;justify-content: space-evenly;
+}
+#topdivone{
+width: 40%;color: white;
+}
+#topdivone>h2{
+font-size: 35px;margin-bottom: 20px;
+}
+#topdivone>p{
+font-size: 22px;margin-bottom: 10px;
+}
+#country{
+width: 1000px;margin: auto;display: flex;justify-content: center;
+align-items: center;margin-top: 60px;
+}
+#country>div>p{
+font-size: 30px;
+}
+#country>div>hr{
+width: 300px;
+}
+.mapouter{
+position:relative;text-align:right;height:500px;width:1000px;
+}
+.gmap_canvas {
+overflow:hidden;background:none!important;height:500px;width:1000px;
+}
+
+#container{
+width: 70%;height: auto;margin: auto;margin-top: 50px;
+}
+
+#india_address>p:nth-child(1){
+text-align: center;margin-top: 20px;
+}
+#india_address>p:nth-child(2){
+color: #9C3353;margin-left: 170px;margin-top: 20px;
+}
+#india_address>p:nth-child(3){
+color: #9C3353;margin-left: 170px;margin-top: 20px;
+}
+
+#singapore{
+   width: 230px;
+   margin-left: 200px;
+   margin-top: 20px;
+   font-size: large;
+}
+#singapore>p:nth-child(1){
+   padding-bottom: 10px;
+}
+#singapore>p:nth-child(2){
+    padding-bottom: 10px;color: #9C3353;
+ }
+ #singapore>p:nth-child(3){
+    padding-bottom: 10px;color: #9C3353;
+ }
+
+ #USA{
+    width: 230px;
+    margin-left: 200px;
+    margin-top: 20px;
+    font-size: large;
+ }
+ #USA>p:nth-child(1){
+    padding-bottom: 10px;
+ }
+ #USA>p:nth-child(2){
+     padding-bottom: 10px;color: #9C3353;
+  }
+  #USA>p:nth-child(3){
+     padding-bottom: 10px;color: #9C3353;
+  }
+
+  #last_box{
+    width: 100%;height: 270px;
+    background-color: #6d9e8c;margin-top: -400px;
+  }
+
+  #social_media{
+     display: flex;gap: 10px;margin-left: 110px;
+  }
+  #fb{
+    border: 1px solid white;width: 280px; display: flex;color: white;
+    justify-content: center;align-items: center;border-radius: 10px;
+  }
+  #twitter{
+    border: 1px solid white;width: 280px;display: flex;color: white;
+    justify-content: center;align-items: center;border-radius: 10px;
+  }
+  #insta{
+    border: 1px solid white;width: 280px;display: flex;color: white;
+    justify-content: center;align-items: center;border-radius: 10px;
+  }
+  #ytube{
+    border: 1px solid white;width: 280px;display: flex;color: white;
+    justify-content: center;align-items: center;border-radius: 10px;
+  }
+  #jtc{
+    color: white;padding: 40px 0px 15px 110px;
+  }
+  #social_sites{
+    color: white;padding: 10px 0px 20px 110px;
+  }
+
+  #form{
+    width: 90%;height: 600px;
+   margin: auto;margin-top: 50px;
+  }
+ #credential{
+   display: flex;margin-bottom: 40px;margin-top: 40px;justify-content: center;
+   align-items: center;justify-content: space-evenly;
+ }
+
+
+ #name{
+   border: none;
+   border-bottom: 1px solid black;
+   width: 100%;
+ }
+
+ #mail{
+   border: none;
+   border-bottom: 1px solid black;
+   width: 100%;
+ }
+ #form>button{
+  margin-top: 30px; width: 300px;height: 50px;
+  border-radius: 25px;background-color: #9C3353;
+  color: white;font-size: large;border: transparent;
+ }
+ #formline{
+   font-weight: lighter;padding-left: 140px;margin-top: 30px; margin-bottom: 20px;
+ }
+ #description{
+   font-size: large;padding-top: 20px;font-weight: bold;
+   padding-left: 20px;border-radius: 10px;
+ }
+ #confirm{
+   font-size: 20px;padding-top: 50px;font-weight: bold;padding-left: 30px;
+   margin-left: 130px; border-radius: 10px;background-color: lightgreen;
+   display: none;
+
+ }

@@ -11,9 +11,9 @@ class fundraiser
 
 function logoclick()
 {
-    window.location.href = "fundraisers.step2.html"
+    window.location.href = "fundraiser.html"
 }
-let fr_selection ="Medical"
+let fr_selection ="medical"
 function main(e)
 {
     e.preventDefault()
@@ -28,6 +28,7 @@ function main(e)
     popinput.classList.add("open-popinput")
 
 }
+
 let select_div1 = document.getElementById("fr_Medical")
 let select_div1_text = document.getElementById("fr_cause_medical_p")
 let select_div2 = document.getElementById("fr_Education")
@@ -118,7 +119,6 @@ function checkotp(e)
 {
     e.preventDefault()
     let otpinput = document.getElementById("otpinput").value
-    console.log("checkotp:",otpinput)
     if(otpinput === "1234")
     {
         popcorrect()
@@ -153,9 +153,11 @@ function step1complete()
     let number =+document.getElementById("fr_phonenum").value
 
     let data = new fundraiser(fr_selection,name,mail,number)
+    localStorage.setItem("step1data",JSON.stringify(data))
+}
 
-    dataarr = []
-    dataarr.push(data)
-    localStorage.setItem("step1data",JSON.stringify(dataarr))
-    console.log(fr_selection)
+function nextstep(e)
+{
+    e.preventDefault()
+    window.location.href="fundraiserstep2.html"
 }

@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="donation_styling.css">
-  <script src="" async defer></script>
+  <script src="donation_script.js" async defer></script>
 </head>
 
 <body>
@@ -36,39 +36,45 @@
           <p>Milaap charges NO fees. We rely on donors like you to cover for our expenses. Kindly consider a tip. Thank you 🙏</p>
         </div>
         <div id="donation_tip_amount" class="to_be_flexed">
-          <label>Include a tip of</label>
+          <p>Include a tip of</p>
           <select name="donation_tip" id="donation_tip">
-            <option value="400">8% (₹ 400.00)</option>
-            <option value="500">10% (₹ 500.00)</option>
-            <option value="600">12% (₹ 600.00)</option>
-            <option value="750">15% (₹ 750.00)</option>
+            <option id="opt_1" value="0.08">8% (₹ 400.00)</option>
+            <option id="opt_2" value="0.10">10% (₹ 500.00)</option>
+            <option id="opt_3" value="0.12">12% (₹ 600.00)</option>
+            <option id="opt_4" value="0.15">15% (₹ 750.00)</option>
+            <option id="opt_5" value="other">Other</option>
           </select>
         </div>
       </div>
       <input required type="text" id="donor_name" placeholder="Name">
-      <div class="to_be_flexed">
+      <div id="mulinp_div" class="to_be_flexed">
         <select name="donor_country" id="donor_country">
-          <option value="+91">India</option>
-          <option value="+1">United States of America</option>
+          <option value="+91">+91</option>
+          <option value="+1">+1</option>
         </select>
         <input required type="tel" name="donor_mobile_number" placeholder="Phone number" id="donor_mobile_number">
       </div>
-      <input required type="donor_email" placeholder="Email id">
-  
+      <input required type="donor_email" placeholder="Email id" id="donor_email">
+
       <div id="donor_nationality">
-        <input required type="radio" id="donor_nationality"><label>I'm an Indian National</label>
-        <input required type="radio" id="donor_nationality"><label>I'm not an Indian National</label>
+        <div>
+          <input required type="radio" id="donor_nationality1" name="donor_nationality"><label for="donor_nationality1">I'm an Indian National</label>
+        </div>
+        <div>
+          <input required type="radio" id="donor_nationality2" name="donor_nationality"><label for="donor_nationality2">I'm not an Indian National</label>
+        </div>
       </div>
-  
-      <label>Donate Anonymously</label>
-      <input required type="submit" name="confirm_donation" id="confirm_donation">
+      <div id="submit_container">
+        <input required type="submit" name="confirm_donation" id="confirm_donation" value="Continue to pay ₹ 0">
+      </div>
     </form>
 
   </div>
 </body>
-
 </html>
-
 <script>
 
 </script>
+
+
+

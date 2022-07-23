@@ -1,0 +1,215 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#main_container{
+  width: 70%;
+  display: flex;
+  margin: auto;
+}
+
+#left_section{
+  width: 60%;
+  margin-right: 30px;
+}
+
+#title{
+  width: 100%;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  text-align: center;
+}
+
+#fr_heading{
+  padding: 20px 0px;
+}
+
+#title p{
+  width: 100%;
+}
+
+#image_slideshow img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+#donation_section{
+  border: 1px solid black;
+  background-color: #f7f7f7;
+  padding: 0px 20px;
+  width: 40%;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+
+}
+
+#donate-supporters{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+}
+
+#tax_benifit_section{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px;
+  border-left: 3px solid #691a47;
+  background-color: #f3f3f3;
+}
+
+#donation_left{
+  display: flex;
+}
+#donation_left p{
+  margin-left: 20px;
+}
+
+#donate_button_div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#donate_button{
+  padding: 15px;
+  width: 100%;
+  border-radius: 25px;
+  font-size: large;
+  border: none;
+  background-color: #9c3353;
+  color: white;
+}
+
+.col_change{
+  color: #9c3353;
+}
+
+#fr_information{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 10px 0px 20px 20px;
+}
+
+.completion_container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.completion_container .outer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border-bottom: 10px solid black;
+  border-right: 10px solid black;
+  padding: 10px;
+}
+
+/* .completion_container .inner {
+  width: 65px;
+  height: 65px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 1px solid black;
+} */
+
+.first{
+  margin-bottom: 15px;
+}
+
+#share_buttons{
+  display: flex;
+  justify-content: space-between;
+}
+
+#share_buttons .share{
+  width: 45%;
+  border: 1px solid black;
+  height: 50px;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
+
+#share_buttons .share img{
+  height: 30px;
+}
+
+#share_buttons .share:first-child{
+  background-color: #25d366;
+}
+
+#share_buttons .share:last-child {
+  background-color: #3b5998;
+}
+
+#raised_info_section{
+  display: flex;
+}
+
+#percentage{
+  height: 80px;
+  width: 80px;
+  /* border: 1px solid black; */
+  margin: 20px;
+}
+
+#inner_circle{
+  height: 100%;
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+#info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#bottom{
+  display: flex;
+
+}
+
+#additional{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px;
+  border-left: 3px solid #691a47;
+  background-color: #f3f3f3;
+  margin-top: 20px;
+}
+
+#story_heading{
+  padding: 15px;
+  width: 100%;
+  border-radius: 25px;
+  font-size: large;
+  border: none;
+  background-color: #9c3353;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}

@@ -312,12 +312,12 @@ body {
   border-radius: 5px;
   background-color: #691a47;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 15px;
-  padding: 20px 30px;
+  padding: 18px 40px;
 }
 #Assam_text {
-  /* margin: 10px 10px; */
+  margin: 10px 13px;
   margin-top: 5px;
-  text-align: center;
+  /* text-align: center; */
   font-size: 14px;
   color: #fff;
 }
@@ -326,12 +326,12 @@ body {
   width: 23%;
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 15px;
-  padding: 20px 30px;
+  padding: 18px 40px;
 }
 #Medical_text {
-  /* margin: 10px 10px; */
+  margin: 10px 13px;
   margin-top: 5px;
-  text-align: center;
+  /* text-align: center; */
   font-size: 14px;
 }
 #Memorial_div {
@@ -340,11 +340,11 @@ body {
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 15px;
 
-  padding: 20px 30px;
+  padding: 18px 40px;
 }
 
 #Memorial_text {
-  /* margin: 10px 10px; */
+  /* margin: 10px 13px; */
   margin-top: 5px;
   text-align: center;
   font-size: 14px;
@@ -354,7 +354,7 @@ body {
   width: 23%;
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 15px;
-  padding: 20px 30px;
+  padding: 18px 40px;
 }
 
 #Others_text {
@@ -365,26 +365,28 @@ body {
 }
 #lp_list {
   height: 700px;
-  width: 290px;
-  margin-top: 80%;
+  width: 320px;
+  margin-top: 65%;
   padding-top: 10px;
   margin-left: -60px;
-  background-color: #fff;
   border-radius: 5px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  z-index: 1000;
+  /* border: 0.5px solid cyan; */
+  /* box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; */
   display: none;
 }
 #lp_ul {
   list-style: none;
 }
 .lp_li {
+  position: sticky;
   height: 100%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding: 10px 0px;
-  margin-top: 6px;
-
+  padding: 20px 20px;
+  /* margin-top: 6px; */
+  background-color: white;
   font-size: 14px;
   color: #691a47;
 }
@@ -397,11 +399,58 @@ body {
   margin-right: 15px;
 }
 #lp_showdata {
-  height: 700px;
+  height: auto;
   width: 78%;
-  border: 1px solid gray;
   margin: auto;
   margin-top: 45px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+  z-index: 500;
+}
+
+.lp_assam_card {
+  height: 450px;
+  width: 100%;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.name_lp_div {
+  height: 55px;
+  width: 80%;
+}
+.design_lp {
+  height: 60px;
+  width: 100%;
+  border: 1px solid red;
+  /* margin-top: -15px; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.design_lp1 {
+  height: 100%;
+  width: 55%;
+  border: 1px solid black;
+}
+.design_lp2 {
+  height: 100%;
+  width: 35%;
+  border: 1px solid black;
+}
+.discount_lp_div {
+  height: 45px;
+  width: 95%;
+  border-left: 3px solid #212121;
+  background-color: rgb(230, 255, 255);
+  margin: auto;
+  margin-top: 8px;
+}
+.discount_lp {
+  font-size: 15px;
+  margin-left: 10px;
+  /* line-height: 1.2; */
 }
 
 #lp_see_more_fundraisers {
@@ -496,7 +545,7 @@ body {
   background-color: #4e072f;
   background-image: url(https://assets.milaap.org/packs/_/assets/images/home/floral-63b2cb34226ab4606c8743991d786df0.png);
 }
-#lp_call{
+#lp_call {
   height: 60%;
   width: 90%;
   margin: auto;
@@ -506,17 +555,14 @@ body {
   align-items: center;
   justify-content: center;
 }
-#lp_help_text
-{ 
-    margin-left: 8%; 
-    margin-top: 20px;
-    font-size: 23px;
-    color: #414040;
-    text-align: center;
-    
+#lp_help_text {
+  margin-left: 8%;
+  margin-top: 20px;
+  font-size: 23px;
+  color: #414040;
+  text-align: center;
 }
-#lp_button
-{
+#lp_button {
   height: 45px;
   width: 20%;
   background-color: #414040;
@@ -527,11 +573,10 @@ body {
   align-items: center;
   justify-content: center;
 }
-#lp_button >img{
+#lp_button > img {
   margin-right: 10px;
 }
-#lp_last_part
-{
+#lp_last_part {
   height: 680px;
   width: 100%;
   background-image: url(https://assets.milaap.org/packs/_/assets/images/home/testimonial-bg-703d695dffc4e175064a2bd22140a262.png);
@@ -539,12 +584,11 @@ body {
   background-position: 0 0;
   background-size: 100% 100%;
 }
-#lp_last_part>h3{
+#lp_last_part > h3 {
   text-align: center;
   margin-top: 11%;
   color: #414040;
 }
-
 
 #lp_container2 {
   height: 50px;
@@ -552,8 +596,7 @@ body {
   margin: auto;
   display: flex;
 }
-#lp_carosul
-{
+#lp_carosul {
   height: 200px;
   width: 60%;
   margin: auto;
@@ -562,9 +605,7 @@ body {
   align-items: center;
   justify-content: center;
 }
-#lp_contact_us
-{
-  
+#lp_contact_us {
   height: 40px;
   width: 11%;
   margin-left: 80%;
@@ -580,14 +621,12 @@ body {
   align-items: center;
   justify-content: center;
   font-size: 14px;
-  
 }
-#lp_contact_us>img{
+#lp_contact_us > img {
   height: 55%;
   margin-right: 6px;
 }
-#lp_see_all_reviews
-{
+#lp_see_all_reviews {
   width: 100%;
   text-align: center;
   font-size: 14px;

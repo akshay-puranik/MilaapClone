@@ -284,6 +284,8 @@
           alt=""
         />
         <p id="Others_text">15 others</p>
+
+        
         <div id="lp_list">
           <ul id="lp_ul">
             <li class="lp_li">
@@ -1876,36 +1878,50 @@
         </div>
       </div>
 <!-- carousel part -->
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 
 
-
       <div id="lp_carosul">
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active slide" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"  aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5"></button>
+          </div>
           <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="./review mg/review1.png" class="d-block w-100" alt="1_pic">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <img src="./review mg/review1.png" class="d-block w-100" alt="...">
             </div>
-            <div class="carousel-item">
+            <div class="carousel-item" data-bs-interval="2000">
               <img src="./review mg/review2.png" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
               <img src="./review mg/review3.png" class="d-block w-100" alt="...">
             </div>
+            <div class="carousel-item">
+              <img src="./review mg/review4.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./review mg/review5.png" class="d-block w-100" alt="...">
+            </div>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" ></span>
-            <span class="visually-hidden">Previous</span>
-            <span style="color: black;font-weight: bold;margin-right: 50%;">Previous</span>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+            
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span style="margin-right: 30%;color: black;font-weight:500;">Prev</span>
+            
           </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+            <span style="color: black;font-weight:500;margin-left: 20%;">Next</span>
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-            <span style="color: black; font-weight: bold;margin-left: 80%;">Next</span>
+            
           </button>
         </div>
       </div>
-<!-- carosulpart -->
+<!-- carosulpart ending -->
       <p id="lp_see_all_reviews">See All reviews</p>
 
 <div id="lp_contact_us">
@@ -1917,3 +1933,4 @@
   </body>
 </html>
 <script src="./landing.js"></script>
+<script src="./lp_appending_data.js"></script>

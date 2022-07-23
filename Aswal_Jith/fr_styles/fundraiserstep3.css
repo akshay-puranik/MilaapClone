@@ -94,6 +94,7 @@ input
     border-bottom: 1px solid rgb(190, 190, 190);
     margin-bottom: 25px;
     outline: none;
+    padding-bottom: 10px;
 }
 
 textarea

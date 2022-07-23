@@ -1,4 +1,4 @@
-lp_assam_data = [
+let lp_assam_data = [
   {
     create_by: "Manoshi Dehingia",
     description:
@@ -78,7 +78,7 @@ lp_assam_data = [
   },
 ];
 
-lp_medical_data = [
+let lp_medical_data = [
   {
     create_by: "SATISH",
     description:
@@ -158,7 +158,7 @@ lp_medical_data = [
   },
 ];
 
-lp_memorial_data = [
+let lp_memorial_data = [
   {
     create_by: "PratikJ",
     description:
@@ -236,11 +236,37 @@ lp_memorial_data = [
   },
 ];
 
+append(lp_assam_data);
+
+console.log(JSON.parse(localStorage.getItem("education")))
+
+if (JSON.parse(localStorage.getItem("education"))) {
+  lp_assam_data.unshift(JSON.parse(localStorage.getItem("education")));
+  append(lp_assam_data);
+  console.log("ed")
+}
+if (JSON.parse(localStorage.getItem("medical"))) {
+  lp_medical_data.unshift(JSON.parse(localStorage.getItem("medical")));
+  append(lp_medical_data)
+  console.log("med")
+}
+if (JSON.parse(localStorage.getItem("memorial"))) {
+  lp_memorial_data.unshift(JSON.parse(localStorage.getItem("memorial"))[0])
+  append(lp_memorial_data)
+  console.log("mem")
+}
+// {
+//   append(lp_assam_data);
+//   console.log("ad")
+// }
+
+
 function append(data) {
+  console.log(data)
   var container = document.getElementById("lp_showdata");
   container.innerHTML = null;
   data.forEach((element) => {
-    console.log(element);
+    // console.log(element);
 
     let image = document.createElement("img");
     image.src = element.image1;
@@ -322,7 +348,7 @@ function append(data) {
   });
 }
 
-append(lp_assam_data);
+
 
 let assam_style = document.getElementById("Assam_div");
 let assam_style_text = document.getElementById("Assam_text");

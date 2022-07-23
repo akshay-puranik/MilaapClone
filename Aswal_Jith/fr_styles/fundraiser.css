@@ -3,8 +3,6 @@ body
     font-family: 'Poppins', sans-serif;
     margin: 0%;
     text-align: center;
-    /* margin-left: 7%;
-    margin-right: 7%; */
     
 }
 
@@ -127,7 +125,6 @@ body
     border-radius: 3px;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
     align-items: center;
-    /* background-color: #691a47; */
 }
 #fr_cause_selection>div:hover
 {
@@ -144,20 +141,24 @@ body
 {
     width: 460px;
     padding-top: 10px;
+    padding-bottom: 10px;
     border: none;
     border-bottom: 1px solid rgb(190, 190, 190);
     margin-bottom: 25px;
+    outline: none;
 }
 
 .fr_num
 {
     border: none;
+    outline: none;
 }
 
 #fr_phonenum
 {
     width: 410px;
     padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 i{
@@ -208,6 +209,11 @@ hr
     border: none;
 }
 
+
+#sub_box>div>input:hover
+{
+    cursor: pointer;
+}
 
 
 
@@ -318,6 +324,11 @@ hr
     box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
 }
 
+.popinput>button:hover
+{
+    cursor: pointer;
+}
+
 #overlay
 {
     display: none;
@@ -344,4 +355,9 @@ hr
     border-radius: 3px;
     color: white;
     background-color: #691a47;
+}
+
+.popbuttn:hover
+{
+    cursor: pointer;
 }

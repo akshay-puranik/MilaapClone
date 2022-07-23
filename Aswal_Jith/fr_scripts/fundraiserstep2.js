@@ -76,11 +76,19 @@ function tostep3()
         let name = document.getElementById("myname").value
         let age = document.getElementById("myage").value
         let reside = document.getElementById("myreside").value
+        console.log(dispic)
+        if(dispic==""|| name==""||age==""||reside=="")
+        {
+            alert("Please fill all the details")
+        }
+        else
+        {
+            let data = new benificiarymydata(dispic,name,age,reside)
+            localStorage.setItem("beneficiarymydetails",JSON.stringify(data))
+            alert("Step 2 Completed")
+            window.location.href="fundraiserstep3.html"
+        }
         
-        let data = new benificiarymydata(dispic,name,age,reside)
-        localStorage.setItem("beneficiarymydetails",JSON.stringify(data))
-        alert("Step 2 Completed")
-        window.location.href="fundraiserstep3.html"
     }
     if(fr_type == "Individual")
     {
@@ -91,10 +99,18 @@ function tostep3()
         let reside = document.getElementById("indresid").value
         let num = document.getElementById("indnum").value
         
-        let data = new benificiaryinddata(relation,relativesname,dispic,age,reside,num)
-        localStorage.setItem("beneficiaryinddetails",JSON.stringify(data))
-        alert("Step 2 Completed")
-        window.location.href="fundraiserstep3.html"
+        if(dispic=="" || relation=="" || relativesname == "" || age =="" || reside=="" || num =="")
+        {
+            alert("Please fill all the details")
+        }
+        else
+        {
+            let data = new benificiaryinddata(relation,relativesname,dispic,age,reside,num)
+            localStorage.setItem("beneficiaryinddetails",JSON.stringify(data))
+            alert("Step 2 Completed")
+            window.location.href="fundraiserstep3.html"
+        }
+        
     }
     if(fr_type == "Group")
     {
@@ -105,9 +121,17 @@ function tostep3()
         let location = document.getElementById("grplocation").value
         let gpersonalnum = document.getElementById("grppernum").value
         
-        let data = new benificiarygrpdata(dispic,gname,position,location,gpersonalnum,gcontact)
-        localStorage.setItem("beneficiaryinddetails",JSON.stringify(data))
-        alert("Step 2 Completed")
-        window.location.href="fundraiserstep3.html"
+        if(dispic=="" || position=="" || gname=="" || gcontact=="" || location=="" || gpersonalnum=="")
+        {
+            alert("Please fill all the details")
+        }
+        else
+        {
+            let data = new benificiarygrpdata(dispic,gname,position,location,gpersonalnum,gcontact)
+            localStorage.setItem("beneficiaryinddetails",JSON.stringify(data))
+            alert("Step 2 Completed")
+            window.location.href="fundraiserstep3.html"
+        }
+        
     }
 }

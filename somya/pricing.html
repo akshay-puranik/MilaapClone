@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="pricing.css">
 </head>
 <body>
+  <div id="navbar"></div>
     <div id="top">
         <div id="topone"><img src="asset2/topdiv_teamworkpic.png" alt="error"></div>
         
@@ -29,11 +30,16 @@
     <div id="midbox">
         <div id="midbox1">
             <p>I want to raise:</p>
-            <div><p>₹ INR 🡇 1,00,000 </p><hr></div>
-             </div>
+
+            <div id="amount">
+              <p>₹ INR 🡇 </p>
+              <input type="text" value="10,000" id="amountToRaise">
+            </div>
+
+            </div>
 
              <div id="slidecontainer">
-                <input type="range" min="100000" max="10000000" value="50" class="slider" id="myRange">
+                <input type="range" min="10000" max="10000000"  class="slider" id="myRange" value="10000" onchange="updateTextInput(this.value);">
               </div>
     </div>
 
@@ -62,3 +68,28 @@
 </div>
 </body>
 </html>
+
+<script >
+  
+
+
+
+ 
+ 
+  //document.getElementById("myRange").addEventListener("change" , updateTextInput)
+
+ function updateTextInput(val){
+  document.getElementById("amountToRaise").value=val;
+  
+  console.log(value)
+ }
+
+
+</script>
+
+<script type="module">
+  import navbar from "../components/navbar.js";
+  console.log(navbar());
+
+  document.getElementById("navbar").innerHTML=navbar()
+</script>

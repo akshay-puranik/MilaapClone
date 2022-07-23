@@ -8,9 +8,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="donate_page.css">
     <script src="donation_page.js" async defer></script>
+
     <!-- <link rel="stylesheet" href="donation_styling.css"> -->
     <link rel="stylesheet" href="testing/index.css">
     <link rel="stylesheet" href="../components/navbar_styling.css">
+    <script src=""></script>
 
   </head>
   <body>
@@ -21,6 +23,7 @@
       <div id="donation_form_container">
         <div id="donation_form_header">
           <h3>Make a secure donation</h3>
+          <h4 id="close_button">❌</h4>
         </div>
         <hr id="donor_form_rule">
         <form id="donation_form_complete">
@@ -142,16 +145,22 @@
           </div>
           <a href="">60 supporters</a>
         </div>
-        <div class="containerpb">
-          <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
-            <defs>
-              <linearGradient id="GradientColor">
-                <stop offset="0%" stop-color="#37d123" />
-                <stop offset="100%" stop-color="#37d123" />
-              </linearGradient>
-            </defs>
-            <circle cx="50" cy="100" r="25" stroke-linecap="round" />
-          </svg>
+        <div id="money_raised">
+          <div class="containerpb">
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+              <defs>
+                <linearGradient id="GradientColor">
+                  <stop offset="0%" stop-color="#37d123" />
+                  <stop offset="100%" stop-color="#37d123" />
+                </linearGradient>
+              </defs>
+              <circle cx="50" cy="100" r="25" stroke-linecap="round" />
+            </svg>
+          </div>
+          <div id="information">
+            <p>Raised</p>
+            <p>Rs <span id="raised_amount"></span> of <span id="required_amount"></span></p>
+          </div>
         </div>
         <div class="first" id="tax_benifit_section">
           <p>Receive<span class="col_change"> tax benefits </span> by donating to this cause.</p>
@@ -162,6 +171,16 @@
         <div class="first" id="donate_button_div">
           <button id="donate_button">Donate Now</button>
         </div>
+        <div class="card_stuff">
+          <p>Card, Netbanking, Cheque pickups</p>
+          <p>Or <span class="col_change">Donate Using</span></p>
+          <div id="qr_code">
+            <img src="assets/qr_code_img.png" alt="">
+          </div>
+        </div>
+        <div id="online">
+          <img src="assets/o_pay_icons.png" alt="">
+        </div>
       </div>
 
     </div>
@@ -170,8 +189,7 @@
 
 <script type="module">
   import navbar from "../components/navbar.js";
-
-  document.querySelector("#navbar").innerHTML = navbar();
+  document.querySelector("#navbar").innerHTML = navbar()
 </script>
 
-    <script src="../components/login_stript.js"></script>
+    <script src="donation_script.js"></script>

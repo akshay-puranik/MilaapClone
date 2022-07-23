@@ -91,21 +91,16 @@
         <div id="image_slideshow">
         </div>
         <div id="raised_info_section">
-          <div id="percentage">
-            <div id="inner_circle">
-
-            </div>
-          </div>
           <div id="info">
             <div class="raised">
               <p>Raised</p>
             </div>
             <div id="bottom">
               <div id="raised_amount">
-                <p>Rs. x</p>
+                <p>Rs. <span id="cur_amount">1000</span></p>
               </div>
-              <div id="target_amount">
-                <p>Rs. y</p>
+              <div id="t">
+                <p> of Rs. <span id="target_amount"></span></p>
               </div>
             </div>
             
@@ -128,11 +123,11 @@
             </div>
             <div id="story_content">
               <h4>[All the contributions shall be used for Medicines, Doctors & Logistics for On-Site Medical/Health relief camps across affected areas in different districts of Assam, India.]</h4>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio nihil eum, distinctio est illo, deserunt quidem neque ab ipsam dolore consectetur enim ad labore corporis recusandae corrupti quos possimus nostrum?
+              <p id="tale"></p>
             </div>
           </div>
           <div id="start_fr">
-            <button id="create_new">
+            <button id="create_new" onclick="redirect()">
               Create a fundraiser
             </button>
           </div>
@@ -184,6 +179,7 @@
       </div>
 
     </div>
+    <div id="footer_container_div"></div>
   </body>
 </html>
 
@@ -192,4 +188,9 @@
   document.querySelector("#navbar").innerHTML = navbar()
 </script>
 
-    <script src="donation_script.js"></script>
+<script src="donation_script.js"></script>
+<script>
+  function redirect(){
+    window.location.href = "../Aswal_Jith/fundraiser.html"
+  }
+</script>

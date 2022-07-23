@@ -127,6 +127,7 @@
 
 #raised_info_section{
   display: flex;
+  padding: 20px;
 }
 
 #percentage{
@@ -231,7 +232,6 @@
   padding: 23px;
   border-radius: 20px;
   background-color: #fff;
-  /* overflow: scroll; */
 }
 
 #donation_form_header {
@@ -319,8 +319,9 @@
   width: 100%;
   padding: 5px 5px 5px 0px;
   border: none;
+  margin-bottom: 15px;
+  outline: none;
   border-bottom: 1px solid #e0e0e0;
-  margin-bottom: 30px;
 }
 
 #donation_tip_container div:last-child {
@@ -333,7 +334,7 @@
   border: none;
   outline: none;
   border-bottom: 1px solid #e0e0e0;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   padding: 5px 5px 5px 0px;
 }
 
@@ -341,12 +342,15 @@
   border: none;
   width: 45px;
   margin-right: 60px;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 
 #donor_mobile_number {
   border: none;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
+  outline: none;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 5px;
 }
 
 /* #9c3353 */
@@ -428,6 +432,13 @@
   padding: 20px;
 }
 
+#raised_amount{
+  margin-right: 10px;
+}
+
+#donate_button:hover{
+  cursor: pointer;
+}
 /* #online img{
   height: 100%;
 } */

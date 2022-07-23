@@ -1,4 +1,5 @@
 let amt = document.querySelector("#donation_amount");
+// console.log(amt)
 amt.addEventListener("input", () => {
   let sub_button = document.querySelector("#confirm_donation");
   
@@ -10,15 +11,14 @@ amt.addEventListener("input", () => {
   document.querySelector("#opt_3").innerText = `${document.querySelector("#opt_3").value * 100}% (₹ ${document.querySelector("#opt_3").value * amt.value}.00)`
   document.querySelector("#opt_4").innerText = `${document.querySelector("#opt_4").value * 100}% (₹ ${document.querySelector("#opt_4").value * amt.value}.00)`
   
-  
-  tip_amount.addEventListener("change", () => {
-    current_tip = tip_amount.value * amt.value;
-    
-    console.log(current_tip)
-  })
-  
-  sub_button.value = `Continue to pay ₹ ${amt.value}`
+  sub_button.value = `Continue to pay ₹ ${+amt.value + +current_tip}`
 })
+
+// var
+function tipChange() {
+
+  console.log(document.querySelector("#donation_tip").value)
+}
 
 let form = document.querySelector("#donation_form_complete").addEventListener("submit", () => {
   event.preventDefault();

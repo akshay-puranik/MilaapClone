@@ -1,4 +1,4 @@
-lp_assam_data = [
+let lp_assam_data = [
   {
     create_by: "Manoshi Dehingia",
     description:
@@ -78,7 +78,7 @@ lp_assam_data = [
   },
 ];
 
-lp_medical_data = [
+let lp_medical_data = [
   {
     create_by: "SATISH",
     description:
@@ -153,12 +153,12 @@ lp_medical_data = [
       "https://cimages.milaap.org/milaap/image/upload/c_fill,g_faces,h_452,w_603/v1654348028/production/images/campaign/510184/WhatsApp_Image_2022-06-04_at_6.35.51_PM_pkg8qd_1654348032.jpg",
     image2:
       "https://cimages.milaap.org/milaap/image/upload/c_fill,g_faces,h_452,w_603/v1654409295/production/images/campaign/510184/j9zt6xilzs2ketw9qfgr_1654409310.jpg",
-    name: "2 Years Old Priyasree Aishwarya Mungara Needs Your Help To Recover From Chronic Kidney Disease",
+    name: "2 Years Old Priyasree Aishwarya Mungara Needs Your Help To Recover From  Kidney Disease",
     price: "50,00,000",
   },
 ];
 
-lp_memorial_data = [
+let lp_memorial_data = [
   {
     create_by: "PratikJ",
     description:
@@ -236,7 +236,33 @@ lp_memorial_data = [
   },
 ];
 
+append(lp_assam_data);
+
+console.log(JSON.parse(localStorage.getItem("education")))
+
+if (JSON.parse(localStorage.getItem("education"))) {
+  lp_assam_data.unshift(JSON.parse(localStorage.getItem("education")));
+  append(lp_assam_data);
+  console.log("ed")
+}
+if (JSON.parse(localStorage.getItem("medical"))) {
+  lp_medical_data.unshift(JSON.parse(localStorage.getItem("medical")));
+  append(lp_medical_data)
+  console.log("med")
+}
+if (JSON.parse(localStorage.getItem("memorial"))) {
+  lp_memorial_data.unshift(JSON.parse(localStorage.getItem("memorial"))[0])
+  append(lp_memorial_data)
+  console.log("mem")
+}
+// {
+//   append(lp_assam_data);
+//   console.log("ad")
+// }
+
+
 function append(data) {
+  console.log(data)
   var container = document.getElementById("lp_showdata");
   container.innerHTML = null;
   data.forEach((element) => {
@@ -252,7 +278,7 @@ function append(data) {
     let name_lp = document.createElement("p");
     name_lp.innerText = element.name;
     name_lp.style.color = "#691a47";
-    name_lp.style.fontSize = "16px";
+    name_lp.style.fontSize = "14px";
     name_lp.style.fontWeight = "500";
     name_lp.style.marginLeft = "10px";
 
@@ -267,17 +293,41 @@ function append(data) {
     let design_lp2 = document.createElement("div");
     design_lp2.setAttribute("class", "design_lp2");
 
+
+    let design_lp1_p=document.createElement("p");
+    design_lp1_p.innerText = "Raised";
+    design_lp1_p.style.fontSize = "14px";
+    design_lp1_p.style.width="100%";
+    design_lp1_p.style.color="#5d5d5d";
+    design_lp1_p.style.textAlign="center"
+
+    let design_lp1_Raised_Money = document.createElement("p");
+      design_lp1_Raised_Money.innerText="0+";
+      design_lp1_Raised_Money.style.width="100%"
+    design_lp1_Raised_Money.style.marginTop = "-13px";
+    design_lp1_Raised_Money.style.fontSize = "16px";
+    design_lp1_Raised_Money.style.textAlign="center";
+    design_lp1_Raised_Money.style.color="#212121"
+
+    
+
     let design_lp2_p = document.createElement("p");
     design_lp2_p.innerText = "Created by";
-    design_lp2_p.style.fontSize = "13px";
+    design_lp2_p.style.fontSize = "12px";
+    design_lp2_p.style.color="#5d5d5d"
+
 
     let design_lp2_created_by = document.createElement("p");
     design_lp2_created_by.innerText = element.create_by;
     design_lp2_created_by.style.marginTop = "-15px";
-    design_lp2_created_by.style.fontSize = "13px";
+    design_lp2_created_by.style.fontSize = "12px";
+    design_lp2_created_by.style.color="#212121"
 
+    design_lp1.append(design_lp1_p,design_lp1_Raised_Money);
     design_lp2.append(design_lp2_p, design_lp2_created_by);
+
     design_lp.append(design_lp1, design_lp2);
+
 
     let discount_lp_div = document.createElement("div");
     discount_lp_div.setAttribute("class", "discount_lp_div");
@@ -298,7 +348,7 @@ function append(data) {
   });
 }
 
-append(lp_assam_data);
+
 
 let assam_style = document.getElementById("Assam_div");
 let assam_style_text = document.getElementById("Assam_text");
@@ -375,38 +425,60 @@ function Assam() {
       image.style.width = "100%";
       image.style.borderTopRightRadius = "6px";
       image.style.borderTopLeftRadius = "6px";
-
+  
       let name_lp = document.createElement("p");
       name_lp.innerText = element.name;
       name_lp.style.color = "#691a47";
-      name_lp.style.fontSize = "16px";
+      name_lp.style.fontSize = "14px";
       name_lp.style.fontWeight = "500";
       name_lp.style.marginLeft = "10px";
-
+  
       let name_lp_div = document.createElement("div");
       name_lp_div.setAttribute("class", "name_lp_div");
       name_lp_div.append(name_lp);
-
+  
       let design_lp = document.createElement("div");
       design_lp.setAttribute("class", "design_lp");
       let design_lp1 = document.createElement("div");
       design_lp1.setAttribute("class", "design_lp1");
       let design_lp2 = document.createElement("div");
       design_lp2.setAttribute("class", "design_lp2");
-
+  
+  
+      let design_lp1_p=document.createElement("p");
+      design_lp1_p.innerText = "Raised";
+      design_lp1_p.style.fontSize = "14px";
+      design_lp1_p.style.width="100%";
+      design_lp1_p.style.color="#5d5d5d";
+      design_lp1_p.style.textAlign="center"
+  
+      let design_lp1_Raised_Money = document.createElement("p");
+        design_lp1_Raised_Money.innerText="0+";
+        design_lp1_Raised_Money.style.width="100%"
+      design_lp1_Raised_Money.style.marginTop = "-13px";
+      design_lp1_Raised_Money.style.fontSize = "16px";
+      design_lp1_Raised_Money.style.textAlign="center";
+      design_lp1_Raised_Money.style.color="#212121"
+  
+      
+  
       let design_lp2_p = document.createElement("p");
       design_lp2_p.innerText = "Created by";
-      design_lp2_p.style.fontSize = "13px";
-
+      design_lp2_p.style.fontSize = "12px";
+      design_lp2_p.style.color="#5d5d5d"
+  
+  
       let design_lp2_created_by = document.createElement("p");
       design_lp2_created_by.innerText = element.create_by;
       design_lp2_created_by.style.marginTop = "-15px";
-      design_lp2_created_by.style.fontSize = "13px";
-
+      design_lp2_created_by.style.fontSize = "12px";
+      design_lp2_created_by.style.color="#212121"
+  
+      design_lp1.append(design_lp1_p,design_lp1_Raised_Money);
       design_lp2.append(design_lp2_p, design_lp2_created_by);
+  
       design_lp.append(design_lp1, design_lp2);
-
-      design_lp.append(design_lp1, design_lp2);
+  
 
       let discount_lp_div = document.createElement("div");
       discount_lp_div.setAttribute("class", "discount_lp_div");
@@ -462,45 +534,66 @@ function Medical() {
     container.innerHTML = null;
     data.forEach((element) => {
       console.log(element);
-
       let image = document.createElement("img");
-      image.src = element.image1;
-      image.style.height = "60%";
-      image.style.width = "100%";
-      image.style.borderTopRightRadius = "6px";
-      image.style.borderTopLeftRadius = "6px";
+    image.src = element.image1;
+    image.style.height = "60%";
+    image.style.width = "100%";
+    image.style.borderTopRightRadius = "6px";
+    image.style.borderTopLeftRadius = "6px";
 
-      let name_lp = document.createElement("p");
-      name_lp.innerText = element.name;
-      name_lp.style.color = "#691a47";
-      name_lp.style.fontSize = "16px";
-      name_lp.style.fontWeight = "500";
-      name_lp.style.marginLeft = "10px";
+    let name_lp = document.createElement("p");
+    name_lp.innerText = element.name;
+    name_lp.style.color = "#691a47";
+    name_lp.style.fontSize = "14px";
+    name_lp.style.fontWeight = "500";
+    name_lp.style.marginLeft = "10px";
 
-      let name_lp_div = document.createElement("div");
-      name_lp_div.setAttribute("class", "name_lp_div");
-      name_lp_div.append(name_lp);
+    let name_lp_div = document.createElement("div");
+    name_lp_div.setAttribute("class", "name_lp_div");
+    name_lp_div.append(name_lp);
 
-      let design_lp = document.createElement("div");
-      design_lp.setAttribute("class", "design_lp");
-      let design_lp1 = document.createElement("div");
-      design_lp1.setAttribute("class", "design_lp1");
-      let design_lp2 = document.createElement("div");
-      design_lp2.setAttribute("class", "design_lp2");
+    let design_lp = document.createElement("div");
+    design_lp.setAttribute("class", "design_lp");
+    let design_lp1 = document.createElement("div");
+    design_lp1.setAttribute("class", "design_lp1");
+    let design_lp2 = document.createElement("div");
+    design_lp2.setAttribute("class", "design_lp2");
 
-      let design_lp2_p = document.createElement("p");
-      design_lp2_p.innerText = "Created by";
-      design_lp2_p.style.fontSize = "13px";
 
-      let design_lp2_created_by = document.createElement("p");
-      design_lp2_created_by.innerText = element.create_by;
-      design_lp2_created_by.style.marginTop = "-15px";
-      design_lp2_created_by.style.fontSize = "13px";
+    let design_lp1_p=document.createElement("p");
+    design_lp1_p.innerText = "Raised";
+    design_lp1_p.style.fontSize = "14px";
+    design_lp1_p.style.width="100%";
+    design_lp1_p.style.color="#5d5d5d";
+    design_lp1_p.style.textAlign="center"
 
-      design_lp2.append(design_lp2_p, design_lp2_created_by);
-      design_lp.append(design_lp1, design_lp2);
+    let design_lp1_Raised_Money = document.createElement("p");
+      design_lp1_Raised_Money.innerText="0+";
+      design_lp1_Raised_Money.style.width="100%"
+    design_lp1_Raised_Money.style.marginTop = "-13px";
+    design_lp1_Raised_Money.style.fontSize = "16px";
+    design_lp1_Raised_Money.style.textAlign="center";
+    design_lp1_Raised_Money.style.color="#212121"
 
-      design_lp.append(design_lp1, design_lp2);
+    
+
+    let design_lp2_p = document.createElement("p");
+    design_lp2_p.innerText = "Created by";
+    design_lp2_p.style.fontSize = "12px";
+    design_lp2_p.style.color="#5d5d5d"
+
+
+    let design_lp2_created_by = document.createElement("p");
+    design_lp2_created_by.innerText = element.create_by;
+    design_lp2_created_by.style.marginTop = "-15px";
+    design_lp2_created_by.style.fontSize = "12px";
+    design_lp2_created_by.style.color="#212121"
+
+    design_lp1.append(design_lp1_p,design_lp1_Raised_Money);
+    design_lp2.append(design_lp2_p, design_lp2_created_by);
+
+    design_lp.append(design_lp1, design_lp2);
+
 
       let discount_lp_div = document.createElement("div");
       discount_lp_div.setAttribute("class", "discount_lp_div");
@@ -562,38 +655,60 @@ function Memorial() {
       image.style.width = "100%";
       image.style.borderTopRightRadius = "6px";
       image.style.borderTopLeftRadius = "6px";
-
+  
       let name_lp = document.createElement("p");
       name_lp.innerText = element.name;
       name_lp.style.color = "#691a47";
-      name_lp.style.fontSize = "16px";
+      name_lp.style.fontSize = "14px";
       name_lp.style.fontWeight = "500";
       name_lp.style.marginLeft = "10px";
-
+  
       let name_lp_div = document.createElement("div");
       name_lp_div.setAttribute("class", "name_lp_div");
       name_lp_div.append(name_lp);
-
+  
       let design_lp = document.createElement("div");
       design_lp.setAttribute("class", "design_lp");
       let design_lp1 = document.createElement("div");
       design_lp1.setAttribute("class", "design_lp1");
       let design_lp2 = document.createElement("div");
       design_lp2.setAttribute("class", "design_lp2");
-
+  
+  
+      let design_lp1_p=document.createElement("p");
+      design_lp1_p.innerText = "Raised";
+      design_lp1_p.style.fontSize = "14px";
+      design_lp1_p.style.width="100%";
+      design_lp1_p.style.color="#5d5d5d";
+      design_lp1_p.style.textAlign="center"
+  
+      let design_lp1_Raised_Money = document.createElement("p");
+        design_lp1_Raised_Money.innerText="0+";
+        design_lp1_Raised_Money.style.width="100%"
+      design_lp1_Raised_Money.style.marginTop = "-13px";
+      design_lp1_Raised_Money.style.fontSize = "16px";
+      design_lp1_Raised_Money.style.textAlign="center";
+      design_lp1_Raised_Money.style.color="#212121"
+  
+      
+  
       let design_lp2_p = document.createElement("p");
       design_lp2_p.innerText = "Created by";
-      design_lp2_p.style.fontSize = "13px";
-
+      design_lp2_p.style.fontSize = "12px";
+      design_lp2_p.style.color="#5d5d5d"
+  
+  
       let design_lp2_created_by = document.createElement("p");
       design_lp2_created_by.innerText = element.create_by;
       design_lp2_created_by.style.marginTop = "-15px";
-      design_lp2_created_by.style.fontSize = "13px";
-
+      design_lp2_created_by.style.fontSize = "12px";
+      design_lp2_created_by.style.color="#212121"
+  
+      design_lp1.append(design_lp1_p,design_lp1_Raised_Money);
       design_lp2.append(design_lp2_p, design_lp2_created_by);
+  
       design_lp.append(design_lp1, design_lp2);
-
-      design_lp.append(design_lp1, design_lp2);
+  
 
       let discount_lp_div = document.createElement("div");
       discount_lp_div.setAttribute("class", "discount_lp_div");

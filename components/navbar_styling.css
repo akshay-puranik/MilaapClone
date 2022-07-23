@@ -33,20 +33,28 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 18px;
-    width: min-content;
     padding: 20px;
+    
+  }
+  .nav_element a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
   }
 
-  .nav_element:nth-child(6) {
+  .nav_element:nth-child(5) {
     width: max-content;
-    /* background-color: black; */
+  }
+
+  .nav_element a:hover{
+    color: black;
   }
 
   .nav_element:hover {
     background-color: #a33555;
     height: auto;
     cursor: pointer;
+    color: black;
   }
 
   #nav_start_fr_button {
@@ -69,6 +77,7 @@
 
   .left_buttons {
     height: inherit;
+    
   }
 
   .full_size {

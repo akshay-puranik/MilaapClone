@@ -6,7 +6,7 @@ let obj = {
   image2: "https://cimages.milaap.org/milaap/image/upload/c_fill,g_faces,h_452,w_603/v1656787035/production/images/campaign/523508/WhatsApp_Image_2022-07-01_at_12.12.06_AM_gyu2j8_1656787038.jpg",
   name: "Assam Needs Your Help To Set Up Medical Camps",
   price: "300000",
-  donated: "300000"
+  donated: "290000"
 }
 
 let title = document.querySelector("#fr_title");

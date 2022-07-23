@@ -8,10 +8,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="donate_page.css">
     <script src="donation_page.js" async defer></script>
-    <link rel="stylesheet" href="donation_styling.css">
+    <!-- <link rel="stylesheet" href="donation_styling.css"> -->
     <link rel="stylesheet" href="testing/index.css">
+    <link rel="stylesheet" href="../components/navbar_styling.css">
+
   </head>
   <body>
+    <nav id="navbar">
+
+    </nav>
     <div id="overlay">
       <div id="donation_form_container">
         <div id="donation_form_header">
@@ -162,3 +167,11 @@
     </div>
   </body>
 </html>
+
+<script type="module">
+  import navbar from "../components/navbar.js";
+
+  document.querySelector("#navbar").innerHTML = navbar();
+</script>
+
+    <script src="../components/login_stript.js"></script>

@@ -13,8 +13,8 @@ const export_navbar = () => {
           <img id="user_logo_sin" src="../assets/navbar_user_logo.png">
         </div>
         <div id="login_signup" class="viz">
-          <a href="../ajay/login.html">Login</a>
-          <a href="../ajay/signup.html">Register</a>
+          <a href="https://milaap.org/users/sign-in">Login</a>
+          <a href="https://milaap.org/users/sign-up">Register</a>
         </div>
       </div>
     </div>`

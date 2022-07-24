@@ -22,8 +22,10 @@ else {
   }
 }
 
-document.querySelector("#required_amount").innerText = obj.price;
-document.querySelector("#target_amount").innerText = obj.price;
+console.log(obj.collected)
+
+document.querySelector(".raised_amount").innerText = `Rs. ${obj.collected} of Rs. ${obj.price}`
+document.querySelector("#raised_amount").innerText = `Rs. ${obj.collected} of Rs. ${obj.price}`
 
 let title = document.querySelector("#fr_title");
 title.innerText = obj.name;
@@ -131,10 +133,15 @@ let form = document.querySelector("#donation_form_complete").addEventListener("s
       num += +amt.value;
       el.collected = num;
       new_obj = el;
+      // document.querySelector("#raised_amount").innerText = +new_obj.collected;
     }
+    
   })
-
   
+  
+  
+  document.querySelector(".raised_amount").innerText = `Rs. ${new_obj.collected} of Rs. ${new_obj.price}`
+  document.querySelector("#raised_amount").innerText = `Rs. ${new_obj.collected} of Rs. ${new_obj.price}`
   document.querySelector("#overlay").style.display = "none";
   
   localStorage.setItem("updated", JSON.stringify(data));

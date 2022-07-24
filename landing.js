@@ -774,6 +774,6 @@ function Assam_cart(data,i) {
   let key = data[i].id;
   localStorage.setItem(key, JSON.stringify(data));
   localStorage.setItem("current_key", key);
-  window.location.href = "../akshay/donate_page.html";
+  window.location.href = "akshay/donate_page.html";
 }
 
